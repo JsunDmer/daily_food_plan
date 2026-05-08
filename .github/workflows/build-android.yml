@@ -1,0 +1,123 @@
+# 构建 Android APK (GitHub Actions 云构建)
+# 
+# 技术栈：Vite + Vue 3 + Capacitor → Android APK
+# 无需本地安装 Android SDK，完全云端构建
+#
+# 触发条件：
+# - push 到 app 分支
+# - 手动触发 (workflow_dispatch)
+# 自动上传到 Artifacts
+
+name: Build Android APK
+
+on:
+  push:
+    branches: [app]
+  pull_request:
+    branches: [app]
+  workflow_dispatch:
+
+# 防止并发构建产生冲突
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. 检出代码
+      - uses: actions/checkout@v4
+      
+      # 2. 设置 JDK 17 (必需)
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+      
+      # 3. 设置 Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      # 4. 安装项目依赖
+      - name: Install dependencies
+        run: npm ci --prefer-offline
+      
+      # 5. 构建前端 Web 资源
+      - name: Build web assets
+        run: npm run build
+      
+      # 6. 同步 Capacitor (复制 web 资源到 Android 项目)
+      - name: Sync Capacitor
+        run: npx cap sync
+      
+      # 7. 使用 Gradle 构建 Debug APK
+      # 先构建 debug 版本，无需签名证书
+      - name: Install Android SDK
+        uses: android-actions/setup-android@v3
+        with:
+          cmdline-tools-version: '11076708'
+          packages: 'platform-tools platforms;android-36 build-tools;36.0.0'
+      
+      - name: Build Debug APK
+        run: |
+          cd android
+          ./gradlew assembleDebug --no-daemon --quiet
+        env:
+          GRADLE_OPTS: -Dorg.gradle.daemon=false
+      
+      - name: Build Staging APK
+        run: |
+          cd android
+          ./gradlew assembleStaging --no-daemon --quiet
+        continue-on-error: true
+        env:
+          GRADLE_OPTS: -Dorg.gradle.daemon=false
+      
+      # 8. 构建 Staging APK (Release + 可调试)
+      # staging build 类型 = release 行为但可查看详细日志
+      - name: Build Staging APK
+        run: |
+          cd android
+          ./gradlew assembleStaging --no-daemon --quiet
+        continue-on-error: true
+      
+      # 9. 上传 APK 到 Artifacts
+      - name: Upload Debug APK
+        uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: app-debug-apk
+          path: android/app/build/outputs/apk/debug/*.apk
+          retention-days: 30
+          if-no-files-found: warn
+      
+      - name: Upload Staging APK
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: app-staging-apk
+          path: android/app/build/outputs/apk/staging/*.apk
+          retention-days: 30
+          if-no-files-found: warn
+      
+      # 10. 显示构建结果摘要
+      - name: Show build summary
+        if: always()
+        run: |
+          echo "=== 构建结果 ==="
+          echo ""
+          if [ -d "android/app/build/outputs/apk/debug" ]; then
+            echo "Debug APK:"
+            ls -lh android/app/build/outputs/apk/debug/*.apk 2>/dev/null || echo "  (不存在)"
+          fi
+          if [ -d "android/app/build/outputs/apk/staging" ]; then
+            echo ""
+            echo "Staging APK:"
+            ls -lh android/app/build/outputs/apk/staging/*.apk 2>/dev/null || echo "  (不存在)"
+          fi
