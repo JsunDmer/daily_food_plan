@@ -1,0 +1,3009 @@
+{
+  "current": {
+    "id": "1778208295030",
+    "createdAt": "2026-05-08T02:44:55.030Z",
+    "season": "spring",
+    "days": [
+      {
+        "day": "周一",
+        "dayIndex": 0,
+        "breakfast": [
+          {
+            "id": "bs010",
+            "name": "红豆粥",
+            "category": "breakfast_staple",
+            "tags": [
+              "粥类",
+              "甜食"
+            ],
+            "season": [
+              "spring",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "红豆",
+                "amount": "80g",
+                "dingdongUrl": "https://www.100.me/%E7%BA%A2%E8%B1%86"
+              },
+              {
+                "name": "大米",
+                "amount": "50g",
+                "dingdongUrl": "https://www.100.me/%E5%A4%A7%E7%B1%B3"
+              },
+              {
+                "name": "冰糖",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E5%86%B0%E7%B3%96"
+              }
+            ],
+            "nutrition": {
+              "calories": 200,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "软糯红豆粥，甜香暖心"
+          },
+          {
+            "id": "br001",
+            "name": "煎蛋",
+            "category": "breakfast_side",
+            "tags": [
+              "蛋类",
+              "快手"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "鸡蛋",
+                "amount": "2个",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+              }
+            ],
+            "nutrition": {
+              "calories": 180,
+              "protein": "high",
+              "fat": "high"
+            },
+            "cost": "low",
+            "description": "简单煎蛋，蛋白质满满"
+          },
+          {
+            "id": "bd001",
+            "name": "牛奶",
+            "category": "breakfast_drink",
+            "tags": [
+              "乳品",
+              "营养"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "纯牛奶",
+                "amount": "250ml",
+                "dingdongUrl": "https://www.100.me/%E7%BA%AF%E7%89%9B%E5%A5%B6"
+              }
+            ],
+            "nutrition": {
+              "calories": 160,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "medium",
+            "description": "纯牛奶，补钙首选"
+          }
+        ],
+        "dinner": [
+          {
+            "id": "dm003",
+            "name": "宫保鸡丁",
+            "category": "dinner_meat",
+            "tags": [
+              "川菜",
+              "鸡肉",
+              "微辣"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "鸡胸肉",
+                "amount": "300g",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%83%B8%E8%82%89"
+              },
+              {
+                "name": "花生米",
+                "amount": "50g",
+                "dingdongUrl": "https://www.100.me/%E8%8A%B1%E7%94%9F%E7%B1%B3"
+              },
+              {
+                "name": "干辣椒",
+                "amount": "5个",
+                "dingdongUrl": "https://www.100.me/%E5%B9%B2%E8%BE%A3%E6%A4%92"
+              },
+              {
+                "name": "黄瓜",
+                "amount": "半根",
+                "dingdongUrl": "https://www.100.me/%E9%BB%84%E7%93%9C"
+              },
+              {
+                "name": "醋",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E9%86%8B"
+              },
+              {
+                "name": "白糖",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E7%99%BD%E7%B3%96"
+              }
+            ],
+            "nutrition": {
+              "calories": 350,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "medium",
+            "description": "经典川菜宫保鸡丁"
+          },
+          {
+            "id": "dv016",
+            "name": "蒜蓉菜心",
+            "category": "dinner_veg",
+            "tags": [
+              "粤菜",
+              "清淡"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "菜心",
+                "amount": "300g",
+                "dingdongUrl": "https://www.100.me/%E8%8F%9C%E5%BF%83"
+              },
+              {
+                "name": "蒜末",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+              },
+              {
+                "name": "盐",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E7%9B%90"
+              }
+            ],
+            "nutrition": {
+              "calories": 50,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "蒜蓉菜心"
+          },
+          {
+            "id": "dv006",
+            "name": "麻婆豆腐",
+            "category": "dinner_veg",
+            "tags": [
+              "川菜",
+              "豆腐",
+              "辣"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "嫩豆腐",
+                "amount": "1块",
+                "dingdongUrl": "https://www.100.me/%E5%AB%A9%E8%B1%86%E8%85%90"
+              },
+              {
+                "name": "肉末",
+                "amount": "50g",
+                "dingdongUrl": "https://www.100.me/%E8%82%89%E6%9C%AB"
+              },
+              {
+                "name": "豆瓣酱",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E8%B1%86%E7%93%A3%E9%85%B1"
+              },
+              {
+                "name": "花椒粉",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%8A%B1%E6%A4%92%E7%B2%89"
+              },
+              {
+                "name": "淀粉",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E6%B7%80%E7%B2%89"
+              }
+            ],
+            "nutrition": {
+              "calories": 180,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "low",
+            "description": "麻辣鲜香麻婆豆腐"
+          },
+          {
+            "id": "ds005",
+            "name": "酸辣汤",
+            "category": "dinner_soup",
+            "tags": [
+              "酸辣",
+              "开胃"
+            ],
+            "season": [
+              "spring",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "豆腐",
+                "amount": "半块",
+                "dingdongUrl": "https://www.100.me/%E8%B1%86%E8%85%90"
+              },
+              {
+                "name": "木耳",
+                "amount": "30g",
+                "dingdongUrl": "https://www.100.me/%E6%9C%A8%E8%80%B3"
+              },
+              {
+                "name": "鸡蛋",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+              },
+              {
+                "name": "醋",
+                "amount": "2勺",
+                "dingdongUrl": "https://www.100.me/%E9%86%8B"
+              },
+              {
+                "name": "胡椒粉",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E8%83%A1%E6%A4%92%E7%B2%89"
+              },
+              {
+                "name": "淀粉",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E6%B7%80%E7%B2%89"
+              }
+            ],
+            "nutrition": {
+              "calories": 90,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "开胃酸辣汤"
+          }
+        ]
+      },
+      {
+        "day": "周二",
+        "dayIndex": 1,
+        "breakfast": [
+          {
+            "id": "bs001",
+            "name": "小米粥",
+            "category": "breakfast_staple",
+            "tags": [
+              "粥类",
+              "养胃"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "小米",
+                "amount": "100g",
+                "dingdongUrl": "https://www.100.me/%E5%B0%8F%E7%B1%B3"
+              }
+            ],
+            "nutrition": {
+              "calories": 180,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "养胃小米粥，温暖开启新一天"
+          },
+          {
+            "id": "br011",
+            "name": "凉拌海带丝",
+            "category": "breakfast_side",
+            "tags": [
+              "凉菜",
+              "清爽"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "海带丝",
+                "amount": "100g",
+                "dingdongUrl": "https://www.100.me/%E6%B5%B7%E5%B8%A6%E4%B8%9D"
+              },
+              {
+                "name": "蒜末",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+              },
+              {
+                "name": "香醋",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E9%A6%99%E9%86%8B"
+              },
+              {
+                "name": "辣椒油",
+                "amount": "少许",
+                "dingdongUrl": "https://www.100.me/%E8%BE%A3%E6%A4%92%E6%B2%B9"
+              }
+            ],
+            "nutrition": {
+              "calories": 50,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "凉拌海带丝"
+          },
+          {
+            "id": "bd005",
+            "name": "酸奶",
+            "category": "breakfast_drink",
+            "tags": [
+              "乳品",
+              "助消化"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "酸奶",
+                "amount": "200ml",
+                "dingdongUrl": "https://www.100.me/%E9%85%B8%E5%A5%B6"
+              }
+            ],
+            "nutrition": {
+              "calories": 130,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "medium",
+            "description": "浓稠酸奶，助消化"
+          }
+        ],
+        "dinner": [
+          {
+            "id": "dm023",
+            "name": "红烧狮子头",
+            "category": "dinner_meat",
+            "tags": [
+              "淮扬",
+              "猪肉"
+            ],
+            "season": [
+              "spring",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "猪肉馅",
+                "amount": "400g",
+                "dingdongUrl": "https://www.100.me/%E7%8C%AA%E8%82%89%E9%A6%85"
+              },
+              {
+                "name": "马蹄",
+                "amount": "50g",
+                "dingdongUrl": "https://www.100.me/%E9%A9%AC%E8%B9%84"
+              },
+              {
+                "name": "生抽",
+                "amount": "2勺",
+                "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+              },
+              {
+                "name": "淀粉",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E6%B7%80%E7%B2%89"
+              }
+            ],
+            "nutrition": {
+              "calories": 380,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "medium",
+            "description": "淮扬名菜红烧狮子头"
+          },
+          {
+            "id": "dv015",
+            "name": "荷塘小炒",
+            "category": "dinner_veg",
+            "tags": [
+              "清淡",
+              "配色"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "荷兰豆",
+                "amount": "150g",
+                "dingdongUrl": "https://www.100.me/%E8%8D%B7%E5%85%B0%E8%B1%86"
+              },
+              {
+                "name": "木耳",
+                "amount": "50g",
+                "dingdongUrl": "https://www.100.me/%E6%9C%A8%E8%80%B3"
+              },
+              {
+                "name": "胡萝卜",
+                "amount": "半根",
+                "dingdongUrl": "https://www.100.me/%E8%83%A1%E8%90%9D%E5%8D%9C"
+              },
+              {
+                "name": "莲藕",
+                "amount": "1节",
+                "dingdongUrl": "https://www.100.me/%E8%8E%B2%E8%97%95"
+              }
+            ],
+            "nutrition": {
+              "calories": 120,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "medium",
+            "description": "荷塘小炒，清爽可人"
+          },
+          {
+            "id": "dv021",
+            "name": "蒸金针菇",
+            "category": "dinner_veg",
+            "tags": [
+              "蒸菜",
+              "菌类"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "金针菇",
+                "amount": "200g",
+                "dingdongUrl": "https://www.100.me/%E9%87%91%E9%92%88%E8%8F%87"
+              },
+              {
+                "name": "蒜末",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+              },
+              {
+                "name": "蒸鱼豉油",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E8%92%B8%E9%B1%BC%E8%B1%89%E6%B2%B9"
+              }
+            ],
+            "nutrition": {
+              "calories": 60,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "蒜蓉蒸金针菇"
+          },
+          {
+            "id": "ds002",
+            "name": "紫菜蛋花汤",
+            "category": "dinner_soup",
+            "tags": [
+              "快手",
+              "简单"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "紫菜",
+                "amount": "1小包",
+                "dingdongUrl": "https://www.100.me/%E7%B4%AB%E8%8F%9C"
+              },
+              {
+                "name": "鸡蛋",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+              },
+              {
+                "name": "虾皮",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E8%99%BE%E7%9A%AE"
+              },
+              {
+                "name": "香油",
+                "amount": "少许",
+                "dingdongUrl": "https://www.100.me/%E9%A6%99%E6%B2%B9"
+              }
+            ],
+            "nutrition": {
+              "calories": 60,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "3分钟紫菜蛋花汤"
+          }
+        ]
+      },
+      {
+        "day": "周三",
+        "dayIndex": 2,
+        "breakfast": [
+          {
+            "id": "bs012",
+            "name": "馒头配腐乳",
+            "category": "breakfast_staple",
+            "tags": [
+              "面食",
+              "传统"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "馒头",
+                "amount": "2个",
+                "dingdongUrl": "https://www.100.me/%E9%A6%92%E5%A4%B4"
+              },
+              {
+                "name": "腐乳",
+                "amount": "1块",
+                "dingdongUrl": "https://www.100.me/%E8%85%90%E4%B9%B3"
+              }
+            ],
+            "nutrition": {
+              "calories": 280,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "白面馒头配腐乳，简单实在"
+          },
+          {
+            "id": "br014",
+            "name": "皮蛋拌豆腐",
+            "category": "breakfast_side",
+            "tags": [
+              "凉菜",
+              "清淡"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "皮蛋",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E7%9A%AE%E8%9B%8B"
+              },
+              {
+                "name": "内酯豆腐",
+                "amount": "1盒",
+                "dingdongUrl": "https://www.100.me/%E5%86%85%E9%85%AF%E8%B1%86%E8%85%90"
+              },
+              {
+                "name": "生抽",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+              },
+              {
+                "name": "香葱",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E9%A6%99%E8%91%B1"
+              }
+            ],
+            "nutrition": {
+              "calories": 150,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "low",
+            "description": "皮蛋拌豆腐"
+          },
+          {
+            "id": "bd007",
+            "name": "柠檬水",
+            "category": "breakfast_drink",
+            "tags": [
+              "饮品",
+              "清爽"
+            ],
+            "season": [
+              "spring",
+              "summer"
+            ],
+            "ingredients": [
+              {
+                "name": "柠檬",
+                "amount": "半个",
+                "dingdongUrl": "https://www.100.me/%E6%9F%A0%E6%AA%AC"
+              },
+              {
+                "name": "蜂蜜",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E8%9C%82%E8%9C%9C"
+              }
+            ],
+            "nutrition": {
+              "calories": 40,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "清新柠檬蜂蜜水"
+          }
+        ],
+        "dinner": [
+          {
+            "id": "dm011",
+            "name": "番茄牛腩",
+            "category": "dinner_meat",
+            "tags": [
+              "牛肉",
+              "番茄",
+              "炖菜"
+            ],
+            "season": [
+              "spring",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "牛腩",
+                "amount": "400g",
+                "dingdongUrl": "https://www.100.me/%E7%89%9B%E8%85%A9"
+              },
+              {
+                "name": "番茄",
+                "amount": "3个",
+                "dingdongUrl": "https://www.100.me/%E7%95%AA%E8%8C%84"
+              },
+              {
+                "name": "土豆",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E5%9C%9F%E8%B1%86"
+              },
+              {
+                "name": "洋葱",
+                "amount": "半个",
+                "dingdongUrl": "https://www.100.me/%E6%B4%8B%E8%91%B1"
+              }
+            ],
+            "nutrition": {
+              "calories": 380,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "high",
+            "description": "酸甜浓郁番茄牛腩"
+          },
+          {
+            "id": "dv017",
+            "name": "木耳炒鸡蛋",
+            "category": "dinner_veg",
+            "tags": [
+              "快手",
+              "菌类"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "木耳",
+                "amount": "100g",
+                "dingdongUrl": "https://www.100.me/%E6%9C%A8%E8%80%B3"
+              },
+              {
+                "name": "鸡蛋",
+                "amount": "2个",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+              },
+              {
+                "name": "葱花",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+              }
+            ],
+            "nutrition": {
+              "calories": 150,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "low",
+            "description": "木耳炒鸡蛋"
+          },
+          {
+            "id": "dv011",
+            "name": "西红柿炒鸡蛋",
+            "category": "dinner_veg",
+            "tags": [
+              "经典",
+              "快手",
+              "番茄"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "番茄",
+                "amount": "2个",
+                "dingdongUrl": "https://www.100.me/%E7%95%AA%E8%8C%84"
+              },
+              {
+                "name": "鸡蛋",
+                "amount": "3个",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+              },
+              {
+                "name": "白糖",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E7%99%BD%E7%B3%96"
+              },
+              {
+                "name": "葱花",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+              }
+            ],
+            "nutrition": {
+              "calories": 180,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "low",
+            "description": "国菜西红柿炒鸡蛋"
+          },
+          {
+            "id": "ds012",
+            "name": "番茄土豆汤",
+            "category": "dinner_soup",
+            "tags": [
+              "番茄",
+              "家常"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "番茄",
+                "amount": "2个",
+                "dingdongUrl": "https://www.100.me/%E7%95%AA%E8%8C%84"
+              },
+              {
+                "name": "土豆",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E5%9C%9F%E8%B1%86"
+              },
+              {
+                "name": "洋葱",
+                "amount": "半个",
+                "dingdongUrl": "https://www.100.me/%E6%B4%8B%E8%91%B1"
+              }
+            ],
+            "nutrition": {
+              "calories": 100,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "番茄土豆汤"
+          }
+        ]
+      },
+      {
+        "day": "周四",
+        "dayIndex": 3,
+        "breakfast": [
+          {
+            "id": "bs011",
+            "name": "馄饨",
+            "category": "breakfast_staple",
+            "tags": [
+              "面食",
+              "汤类"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "馄饨皮",
+                "amount": "20张",
+                "dingdongUrl": "https://www.100.me/%E9%A6%84%E9%A5%A8%E7%9A%AE"
+              },
+              {
+                "name": "猪肉馅",
+                "amount": "150g",
+                "dingdongUrl": "https://www.100.me/%E7%8C%AA%E8%82%89%E9%A6%85"
+              },
+              {
+                "name": "紫菜",
+                "amount": "少许",
+                "dingdongUrl": "https://www.100.me/%E7%B4%AB%E8%8F%9C"
+              },
+              {
+                "name": "虾皮",
+                "amount": "少许",
+                "dingdongUrl": "https://www.100.me/%E8%99%BE%E7%9A%AE"
+              }
+            ],
+            "nutrition": {
+              "calories": 320,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "low",
+            "description": "鲜美小馄饨，皮薄馅嫩"
+          },
+          {
+            "id": "br005",
+            "name": "酱菜",
+            "category": "breakfast_side",
+            "tags": [
+              "小菜",
+              "传统"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "酱菜",
+                "amount": "1小碟",
+                "dingdongUrl": "https://www.100.me/%E9%85%B1%E8%8F%9C"
+              }
+            ],
+            "nutrition": {
+              "calories": 30,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "开胃小酱菜"
+          },
+          {
+            "id": "bd003",
+            "name": "蜂蜜水",
+            "category": "breakfast_drink",
+            "tags": [
+              "饮品",
+              "养生"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "蜂蜜",
+                "amount": "2勺",
+                "dingdongUrl": "https://www.100.me/%E8%9C%82%E8%9C%9C"
+              }
+            ],
+            "nutrition": {
+              "calories": 60,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "medium",
+            "description": "温蜂蜜水，润肠通便"
+          }
+        ],
+        "dinner": [
+          {
+            "id": "dm017",
+            "name": "红烧排骨",
+            "category": "dinner_meat",
+            "tags": [
+              "排骨",
+              "红烧"
+            ],
+            "season": [
+              "spring",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "排骨",
+                "amount": "500g",
+                "dingdongUrl": "https://www.100.me/%E6%8E%92%E9%AA%A8"
+              },
+              {
+                "name": "生抽",
+                "amount": "2勺",
+                "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+              },
+              {
+                "name": "老抽",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E8%80%81%E6%8A%BD"
+              },
+              {
+                "name": "冰糖",
+                "amount": "20g",
+                "dingdongUrl": "https://www.100.me/%E5%86%B0%E7%B3%96"
+              }
+            ],
+            "nutrition": {
+              "calories": 500,
+              "protein": "high",
+              "fat": "high"
+            },
+            "cost": "medium",
+            "description": "红烧排骨，酥软入味"
+          },
+          {
+            "id": "dv012",
+            "name": "白灼菜心",
+            "category": "dinner_veg",
+            "tags": [
+              "粤菜",
+              "清淡"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "菜心",
+                "amount": "300g",
+                "dingdongUrl": "https://www.100.me/%E8%8F%9C%E5%BF%83"
+              },
+              {
+                "name": "蚝油",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E8%9A%9D%E6%B2%B9"
+              },
+              {
+                "name": "蒜末",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+              }
+            ],
+            "nutrition": {
+              "calories": 60,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "粤式白灼菜心"
+          },
+          {
+            "id": "dv003",
+            "name": "蒜蓉西兰花",
+            "category": "dinner_veg",
+            "tags": [
+              "健康",
+              "清淡"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "西兰花",
+                "amount": "1颗",
+                "dingdongUrl": "https://www.100.me/%E8%A5%BF%E5%85%B0%E8%8A%B1"
+              },
+              {
+                "name": "蒜末",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+              },
+              {
+                "name": "蚝油",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E8%9A%9D%E6%B2%B9"
+              }
+            ],
+            "nutrition": {
+              "calories": 80,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "medium",
+            "description": "蒜蓉西兰花，营养健康"
+          },
+          {
+            "id": "ds008",
+            "name": "豆腐鱼头汤",
+            "category": "dinner_soup",
+            "tags": [
+              "炖汤",
+              "鱼",
+              "营养"
+            ],
+            "season": [
+              "spring",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "鱼头",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E9%B1%BC%E5%A4%B4"
+              },
+              {
+                "name": "豆腐",
+                "amount": "1块",
+                "dingdongUrl": "https://www.100.me/%E8%B1%86%E8%85%90"
+              },
+              {
+                "name": "姜片",
+                "amount": "3片",
+                "dingdongUrl": "https://www.100.me/%E5%A7%9C%E7%89%87"
+              },
+              {
+                "name": "葱花",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+              }
+            ],
+            "nutrition": {
+              "calories": 180,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "medium",
+            "description": "奶白豆腐鱼头汤"
+          }
+        ]
+      },
+      {
+        "day": "周五",
+        "dayIndex": 4,
+        "breakfast": [
+          {
+            "id": "bs004",
+            "name": "皮蛋瘦肉粥",
+            "category": "breakfast_staple",
+            "tags": [
+              "粥类",
+              "广式"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "大米",
+                "amount": "100g",
+                "dingdongUrl": "https://www.100.me/%E5%A4%A7%E7%B1%B3"
+              },
+              {
+                "name": "皮蛋",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E7%9A%AE%E8%9B%8B"
+              },
+              {
+                "name": "猪瘦肉",
+                "amount": "100g",
+                "dingdongUrl": "https://www.100.me/%E7%8C%AA%E7%98%A6%E8%82%89"
+              },
+              {
+                "name": "姜丝",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E5%A7%9C%E4%B8%9D"
+              }
+            ],
+            "nutrition": {
+              "calories": 280,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "medium",
+            "description": "经典广式皮蛋瘦肉粥"
+          },
+          {
+            "id": "br004",
+            "name": "茶叶蛋",
+            "category": "breakfast_side",
+            "tags": [
+              "蛋类",
+              "传统"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "鸡蛋",
+                "amount": "2个",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+              },
+              {
+                "name": "茶叶",
+                "amount": "1小包",
+                "dingdongUrl": "https://www.100.me/%E8%8C%B6%E5%8F%B6"
+              },
+              {
+                "name": "八角",
+                "amount": "2个",
+                "dingdongUrl": "https://www.100.me/%E5%85%AB%E8%A7%92"
+              },
+              {
+                "name": "桂皮",
+                "amount": "1小块",
+                "dingdongUrl": "https://www.100.me/%E6%A1%82%E7%9A%AE"
+              }
+            ],
+            "nutrition": {
+              "calories": 160,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "low",
+            "description": "五香茶叶蛋，入味好"
+          },
+          {
+            "id": "bd012",
+            "name": "红豆汤",
+            "category": "breakfast_drink",
+            "tags": [
+              "豆类",
+              "养生"
+            ],
+            "season": [
+              "spring",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "红豆",
+                "amount": "50g",
+                "dingdongUrl": "https://www.100.me/%E7%BA%A2%E8%B1%86"
+              },
+              {
+                "name": "冰糖",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E5%86%B0%E7%B3%96"
+              }
+            ],
+            "nutrition": {
+              "calories": 120,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "红豆汤，暖心暖胃"
+          }
+        ],
+        "dinner": [
+          {
+            "id": "dm002",
+            "name": "糖醋排骨",
+            "category": "dinner_meat",
+            "tags": [
+              "硬菜",
+              "猪肉",
+              "酸甜"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "小排",
+                "amount": "500g",
+                "dingdongUrl": "https://www.100.me/%E5%B0%8F%E6%8E%92"
+              },
+              {
+                "name": "醋",
+                "amount": "3勺",
+                "dingdongUrl": "https://www.100.me/%E9%86%8B"
+              },
+              {
+                "name": "白糖",
+                "amount": "2勺",
+                "dingdongUrl": "https://www.100.me/%E7%99%BD%E7%B3%96"
+              },
+              {
+                "name": "番茄酱",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E7%95%AA%E8%8C%84%E9%85%B1"
+              },
+              {
+                "name": "葱姜",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%91%B1%E5%A7%9C"
+              }
+            ],
+            "nutrition": {
+              "calories": 480,
+              "protein": "high",
+              "fat": "high"
+            },
+            "cost": "medium",
+            "description": "酸甜可口糖醋排骨"
+          },
+          {
+            "id": "dv008",
+            "name": "香菇青菜",
+            "category": "dinner_veg",
+            "tags": [
+              "清淡",
+              "菌类"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "香菇",
+                "amount": "5朵",
+                "dingdongUrl": "https://www.100.me/%E9%A6%99%E8%8F%87"
+              },
+              {
+                "name": "小青菜",
+                "amount": "200g",
+                "dingdongUrl": "https://www.100.me/%E5%B0%8F%E9%9D%92%E8%8F%9C"
+              },
+              {
+                "name": "蚝油",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E8%9A%9D%E6%B2%B9"
+              }
+            ],
+            "nutrition": {
+              "calories": 70,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "medium",
+            "description": "蚝油香菇青菜"
+          },
+          {
+            "id": "dv023",
+            "name": "凉拌木耳菜",
+            "category": "dinner_veg",
+            "tags": [
+              "凉菜",
+              "木耳"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "木耳菜",
+                "amount": "200g",
+                "dingdongUrl": "https://www.100.me/%E6%9C%A8%E8%80%B3%E8%8F%9C"
+              },
+              {
+                "name": "蒜末",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+              },
+              {
+                "name": "香醋",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E9%A6%99%E9%86%8B"
+              }
+            ],
+            "nutrition": {
+              "calories": 50,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "凉拌木耳菜"
+          },
+          {
+            "id": "ds009",
+            "name": "菠菜蛋花汤",
+            "category": "dinner_soup",
+            "tags": [
+              "快手",
+              "清淡"
+            ],
+            "season": [
+              "spring",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "菠菜",
+                "amount": "200g",
+                "dingdongUrl": "https://www.100.me/%E8%8F%A0%E8%8F%9C"
+              },
+              {
+                "name": "鸡蛋",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+              },
+              {
+                "name": "香油",
+                "amount": "少许",
+                "dingdongUrl": "https://www.100.me/%E9%A6%99%E6%B2%B9"
+              }
+            ],
+            "nutrition": {
+              "calories": 70,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "快手菠菜蛋花汤"
+          }
+        ]
+      },
+      {
+        "day": "周六",
+        "dayIndex": 5,
+        "breakfast": [
+          {
+            "id": "bs018",
+            "name": "发糕",
+            "category": "breakfast_staple",
+            "tags": [
+              "糕点",
+              "传统"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "面粉",
+                "amount": "200g",
+                "dingdongUrl": "https://www.100.me/%E9%9D%A2%E7%B2%89"
+              },
+              {
+                "name": "红枣",
+                "amount": "5颗",
+                "dingdongUrl": "https://www.100.me/%E7%BA%A2%E6%9E%A3"
+              },
+              {
+                "name": "酵母",
+                "amount": "3g",
+                "dingdongUrl": "https://www.100.me/%E9%85%B5%E6%AF%8D"
+              }
+            ],
+            "nutrition": {
+              "calories": 300,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "红枣发糕，松软香甜"
+          },
+          {
+            "id": "br008",
+            "name": "凉拌木耳",
+            "category": "breakfast_side",
+            "tags": [
+              "凉菜",
+              "清爽"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn"
+            ],
+            "ingredients": [
+              {
+                "name": "黑木耳",
+                "amount": "50g",
+                "dingdongUrl": "https://www.100.me/%E9%BB%91%E6%9C%A8%E8%80%B3"
+              },
+              {
+                "name": "蒜末",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+              },
+              {
+                "name": "香醋",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E9%A6%99%E9%86%8B"
+              },
+              {
+                "name": "香油",
+                "amount": "少许",
+                "dingdongUrl": "https://www.100.me/%E9%A6%99%E6%B2%B9"
+              }
+            ],
+            "nutrition": {
+              "calories": 60,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "清爽凉拌木耳"
+          },
+          {
+            "id": "bd002",
+            "name": "豆浆",
+            "category": "breakfast_drink",
+            "tags": [
+              "豆制品",
+              "传统"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "黄豆",
+                "amount": "50g",
+                "dingdongUrl": "https://www.100.me/%E9%BB%84%E8%B1%86"
+              }
+            ],
+            "nutrition": {
+              "calories": 80,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "自制鲜豆浆，植物蛋白"
+          }
+        ],
+        "dinner": [
+          {
+            "id": "dm008",
+            "name": "青椒肉丝",
+            "category": "dinner_meat",
+            "tags": [
+              "快手",
+              "猪肉",
+              "下饭"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn"
+            ],
+            "ingredients": [
+              {
+                "name": "猪里脊",
+                "amount": "200g",
+                "dingdongUrl": "https://www.100.me/%E7%8C%AA%E9%87%8C%E8%84%8A"
+              },
+              {
+                "name": "青椒",
+                "amount": "2个",
+                "dingdongUrl": "https://www.100.me/%E9%9D%92%E6%A4%92"
+              },
+              {
+                "name": "生抽",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+              },
+              {
+                "name": "淀粉",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E6%B7%80%E7%B2%89"
+              }
+            ],
+            "nutrition": {
+              "calories": 280,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "low",
+            "description": "快手青椒肉丝"
+          },
+          {
+            "id": "dv022",
+            "name": "炒南瓜",
+            "category": "dinner_veg",
+            "tags": [
+              "南瓜",
+              "秋季"
+            ],
+            "season": [
+              "autumn"
+            ],
+            "ingredients": [
+              {
+                "name": "南瓜",
+                "amount": "300g",
+                "dingdongUrl": "https://www.100.me/%E5%8D%97%E7%93%9C"
+              },
+              {
+                "name": "葱花",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+              },
+              {
+                "name": "盐",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E7%9B%90"
+              }
+            ],
+            "nutrition": {
+              "calories": 80,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "清炒南瓜"
+          },
+          {
+            "id": "dv002",
+            "name": "地三鲜",
+            "category": "dinner_veg",
+            "tags": [
+              "东北菜",
+              "茄子",
+              "土豆"
+            ],
+            "season": [
+              "summer",
+              "autumn"
+            ],
+            "ingredients": [
+              {
+                "name": "茄子",
+                "amount": "1根",
+                "dingdongUrl": "https://www.100.me/%E8%8C%84%E5%AD%90"
+              },
+              {
+                "name": "土豆",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E5%9C%9F%E8%B1%86"
+              },
+              {
+                "name": "青椒",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E9%9D%92%E6%A4%92"
+              },
+              {
+                "name": "生抽",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+              },
+              {
+                "name": "淀粉",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E6%B7%80%E7%B2%89"
+              }
+            ],
+            "nutrition": {
+              "calories": 180,
+              "protein": "medium",
+              "fat": "medium"
+            },
+            "cost": "low",
+            "description": "东北经典地三鲜"
+          },
+          {
+            "id": "ds011",
+            "name": "虾滑汤",
+            "category": "dinner_soup",
+            "tags": [
+              "海鲜",
+              "清淡"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "虾滑",
+                "amount": "150g",
+                "dingdongUrl": "https://www.100.me/%E8%99%BE%E6%BB%91"
+              },
+              {
+                "name": "鸡蛋",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+              },
+              {
+                "name": "紫菜",
+                "amount": "少许",
+                "dingdongUrl": "https://www.100.me/%E7%B4%AB%E8%8F%9C"
+              },
+              {
+                "name": "香菜",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E9%A6%99%E8%8F%9C"
+              }
+            ],
+            "nutrition": {
+              "calories": 100,
+              "protein": "high",
+              "fat": "low"
+            },
+            "cost": "medium",
+            "description": "鲜虾滑汤"
+          }
+        ]
+      },
+      {
+        "day": "周日",
+        "dayIndex": 6,
+        "breakfast": [
+          {
+            "id": "bs002",
+            "name": "葱油拌面",
+            "category": "breakfast_staple",
+            "tags": [
+              "面类",
+              "快手"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "挂面",
+                "amount": "150g",
+                "dingdongUrl": "https://www.100.me/%E6%8C%82%E9%9D%A2"
+              },
+              {
+                "name": "小葱",
+                "amount": "3根",
+                "dingdongUrl": "https://www.100.me/%E5%B0%8F%E8%91%B1"
+              },
+              {
+                "name": "生抽",
+                "amount": "2勺",
+                "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+              },
+              {
+                "name": "老抽",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E8%80%81%E6%8A%BD"
+              }
+            ],
+            "nutrition": {
+              "calories": 380,
+              "protein": "medium",
+              "fat": "medium"
+            },
+            "cost": "low",
+            "description": "快手葱油拌面，香气四溢"
+          },
+          {
+            "id": "br010",
+            "name": "蒸蛋羹",
+            "category": "breakfast_side",
+            "tags": [
+              "蛋类",
+              "嫩滑"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "鸡蛋",
+                "amount": "2个",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+              }
+            ],
+            "nutrition": {
+              "calories": 140,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "low",
+            "description": "嫩滑蒸蛋羹"
+          },
+          {
+            "id": "bd011",
+            "name": "菊花茶",
+            "category": "breakfast_drink",
+            "tags": [
+              "茶饮",
+              "养生"
+            ],
+            "season": [
+              "summer",
+              "autumn"
+            ],
+            "ingredients": [
+              {
+                "name": "干菊花",
+                "amount": "5朵",
+                "dingdongUrl": "https://www.100.me/%E5%B9%B2%E8%8F%8A%E8%8A%B1"
+              },
+              {
+                "name": "冰糖",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E5%86%B0%E7%B3%96"
+              }
+            ],
+            "nutrition": {
+              "calories": 30,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "清肝明目菊花茶"
+          }
+        ],
+        "dinner": [
+          {
+            "id": "dm010",
+            "name": "黄焖鸡",
+            "category": "dinner_meat",
+            "tags": [
+              "鸡肉",
+              "炖菜",
+              "下饭"
+            ],
+            "season": [
+              "spring",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "鸡腿",
+                "amount": "3个",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%85%BF"
+              },
+              {
+                "name": "香菇",
+                "amount": "5朵",
+                "dingdongUrl": "https://www.100.me/%E9%A6%99%E8%8F%87"
+              },
+              {
+                "name": "青椒",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E9%9D%92%E6%A4%92"
+              },
+              {
+                "name": "黄焖酱",
+                "amount": "2勺",
+                "dingdongUrl": "https://www.100.me/%E9%BB%84%E7%84%96%E9%85%B1"
+              },
+              {
+                "name": "土豆",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E5%9C%9F%E8%B1%86"
+              }
+            ],
+            "nutrition": {
+              "calories": 400,
+              "protein": "high",
+              "fat": "medium"
+            },
+            "cost": "medium",
+            "description": "浓香黄焖鸡米饭"
+          },
+          {
+            "id": "dv007",
+            "name": "炒土豆丝",
+            "category": "dinner_veg",
+            "tags": [
+              "快手",
+              "土豆"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "土豆",
+                "amount": "2个",
+                "dingdongUrl": "https://www.100.me/%E5%9C%9F%E8%B1%86"
+              },
+              {
+                "name": "干辣椒",
+                "amount": "2个",
+                "dingdongUrl": "https://www.100.me/%E5%B9%B2%E8%BE%A3%E6%A4%92"
+              },
+              {
+                "name": "醋",
+                "amount": "1勺",
+                "dingdongUrl": "https://www.100.me/%E9%86%8B"
+              },
+              {
+                "name": "葱花",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+              }
+            ],
+            "nutrition": {
+              "calories": 120,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "酸辣土豆丝，下饭神器"
+          },
+          {
+            "id": "dv009",
+            "name": "清炒莴笋",
+            "category": "dinner_veg",
+            "tags": [
+              "清淡",
+              "快手"
+            ],
+            "season": [
+              "spring",
+              "summer"
+            ],
+            "ingredients": [
+              {
+                "name": "莴笋",
+                "amount": "1根",
+                "dingdongUrl": "https://www.100.me/%E8%8E%B4%E7%AC%8B"
+              },
+              {
+                "name": "蒜末",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+              }
+            ],
+            "nutrition": {
+              "calories": 50,
+              "protein": "low",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "清脆爽口炒莴笋"
+          },
+          {
+            "id": "ds001",
+            "name": "番茄蛋汤",
+            "category": "dinner_soup",
+            "tags": [
+              "快手",
+              "番茄"
+            ],
+            "season": [
+              "spring",
+              "summer",
+              "autumn",
+              "winter"
+            ],
+            "ingredients": [
+              {
+                "name": "番茄",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E7%95%AA%E8%8C%84"
+              },
+              {
+                "name": "鸡蛋",
+                "amount": "1个",
+                "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+              },
+              {
+                "name": "香油",
+                "amount": "少许",
+                "dingdongUrl": "https://www.100.me/%E9%A6%99%E6%B2%B9"
+              },
+              {
+                "name": "葱花",
+                "amount": "适量",
+                "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+              }
+            ],
+            "nutrition": {
+              "calories": 80,
+              "protein": "medium",
+              "fat": "low"
+            },
+            "cost": "low",
+            "description": "5分钟快手番茄蛋汤"
+          }
+        ]
+      }
+    ],
+    "shoppingList": [
+      {
+        "day": "周一",
+        "dayIndex": 0,
+        "ingredients": [
+          {
+            "name": "红豆",
+            "amount": "80g",
+            "dishName": "红豆粥",
+            "dingdongUrl": "https://www.100.me/%E7%BA%A2%E8%B1%86"
+          },
+          {
+            "name": "大米",
+            "amount": "50g",
+            "dishName": "红豆粥",
+            "dingdongUrl": "https://www.100.me/%E5%A4%A7%E7%B1%B3"
+          },
+          {
+            "name": "冰糖",
+            "amount": "适量",
+            "dishName": "红豆粥",
+            "dingdongUrl": "https://www.100.me/%E5%86%B0%E7%B3%96"
+          },
+          {
+            "name": "鸡蛋",
+            "amount": "2个",
+            "dishName": "煎蛋",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+          },
+          {
+            "name": "纯牛奶",
+            "amount": "250ml",
+            "dishName": "牛奶",
+            "dingdongUrl": "https://www.100.me/%E7%BA%AF%E7%89%9B%E5%A5%B6"
+          },
+          {
+            "name": "鸡胸肉",
+            "amount": "300g",
+            "dishName": "宫保鸡丁",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%83%B8%E8%82%89"
+          },
+          {
+            "name": "花生米",
+            "amount": "50g",
+            "dishName": "宫保鸡丁",
+            "dingdongUrl": "https://www.100.me/%E8%8A%B1%E7%94%9F%E7%B1%B3"
+          },
+          {
+            "name": "干辣椒",
+            "amount": "5个",
+            "dishName": "宫保鸡丁",
+            "dingdongUrl": "https://www.100.me/%E5%B9%B2%E8%BE%A3%E6%A4%92"
+          },
+          {
+            "name": "黄瓜",
+            "amount": "半根",
+            "dishName": "宫保鸡丁",
+            "dingdongUrl": "https://www.100.me/%E9%BB%84%E7%93%9C"
+          },
+          {
+            "name": "醋",
+            "amount": "1勺",
+            "dishName": "宫保鸡丁",
+            "dingdongUrl": "https://www.100.me/%E9%86%8B"
+          },
+          {
+            "name": "白糖",
+            "amount": "1勺",
+            "dishName": "宫保鸡丁",
+            "dingdongUrl": "https://www.100.me/%E7%99%BD%E7%B3%96"
+          },
+          {
+            "name": "菜心",
+            "amount": "300g",
+            "dishName": "蒜蓉菜心",
+            "dingdongUrl": "https://www.100.me/%E8%8F%9C%E5%BF%83"
+          },
+          {
+            "name": "蒜末",
+            "amount": "适量",
+            "dishName": "蒜蓉菜心",
+            "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+          },
+          {
+            "name": "盐",
+            "amount": "适量",
+            "dishName": "蒜蓉菜心",
+            "dingdongUrl": "https://www.100.me/%E7%9B%90"
+          },
+          {
+            "name": "嫩豆腐",
+            "amount": "1块",
+            "dishName": "麻婆豆腐",
+            "dingdongUrl": "https://www.100.me/%E5%AB%A9%E8%B1%86%E8%85%90"
+          },
+          {
+            "name": "肉末",
+            "amount": "50g",
+            "dishName": "麻婆豆腐",
+            "dingdongUrl": "https://www.100.me/%E8%82%89%E6%9C%AB"
+          },
+          {
+            "name": "豆瓣酱",
+            "amount": "1勺",
+            "dishName": "麻婆豆腐",
+            "dingdongUrl": "https://www.100.me/%E8%B1%86%E7%93%A3%E9%85%B1"
+          },
+          {
+            "name": "花椒粉",
+            "amount": "适量",
+            "dishName": "麻婆豆腐",
+            "dingdongUrl": "https://www.100.me/%E8%8A%B1%E6%A4%92%E7%B2%89"
+          },
+          {
+            "name": "淀粉",
+            "amount": "1勺",
+            "dishName": "麻婆豆腐",
+            "dingdongUrl": "https://www.100.me/%E6%B7%80%E7%B2%89"
+          },
+          {
+            "name": "豆腐",
+            "amount": "半块",
+            "dishName": "酸辣汤",
+            "dingdongUrl": "https://www.100.me/%E8%B1%86%E8%85%90"
+          },
+          {
+            "name": "木耳",
+            "amount": "30g",
+            "dishName": "酸辣汤",
+            "dingdongUrl": "https://www.100.me/%E6%9C%A8%E8%80%B3"
+          },
+          {
+            "name": "鸡蛋",
+            "amount": "1个",
+            "dishName": "酸辣汤",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+          },
+          {
+            "name": "醋",
+            "amount": "2勺",
+            "dishName": "酸辣汤",
+            "dingdongUrl": "https://www.100.me/%E9%86%8B"
+          },
+          {
+            "name": "胡椒粉",
+            "amount": "1勺",
+            "dishName": "酸辣汤",
+            "dingdongUrl": "https://www.100.me/%E8%83%A1%E6%A4%92%E7%B2%89"
+          },
+          {
+            "name": "淀粉",
+            "amount": "1勺",
+            "dishName": "酸辣汤",
+            "dingdongUrl": "https://www.100.me/%E6%B7%80%E7%B2%89"
+          }
+        ]
+      },
+      {
+        "day": "周二",
+        "dayIndex": 1,
+        "ingredients": [
+          {
+            "name": "小米",
+            "amount": "100g",
+            "dishName": "小米粥",
+            "dingdongUrl": "https://www.100.me/%E5%B0%8F%E7%B1%B3"
+          },
+          {
+            "name": "海带丝",
+            "amount": "100g",
+            "dishName": "凉拌海带丝",
+            "dingdongUrl": "https://www.100.me/%E6%B5%B7%E5%B8%A6%E4%B8%9D"
+          },
+          {
+            "name": "蒜末",
+            "amount": "适量",
+            "dishName": "凉拌海带丝",
+            "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+          },
+          {
+            "name": "香醋",
+            "amount": "1勺",
+            "dishName": "凉拌海带丝",
+            "dingdongUrl": "https://www.100.me/%E9%A6%99%E9%86%8B"
+          },
+          {
+            "name": "辣椒油",
+            "amount": "少许",
+            "dishName": "凉拌海带丝",
+            "dingdongUrl": "https://www.100.me/%E8%BE%A3%E6%A4%92%E6%B2%B9"
+          },
+          {
+            "name": "酸奶",
+            "amount": "200ml",
+            "dishName": "酸奶",
+            "dingdongUrl": "https://www.100.me/%E9%85%B8%E5%A5%B6"
+          },
+          {
+            "name": "猪肉馅",
+            "amount": "400g",
+            "dishName": "红烧狮子头",
+            "dingdongUrl": "https://www.100.me/%E7%8C%AA%E8%82%89%E9%A6%85"
+          },
+          {
+            "name": "马蹄",
+            "amount": "50g",
+            "dishName": "红烧狮子头",
+            "dingdongUrl": "https://www.100.me/%E9%A9%AC%E8%B9%84"
+          },
+          {
+            "name": "生抽",
+            "amount": "2勺",
+            "dishName": "红烧狮子头",
+            "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+          },
+          {
+            "name": "淀粉",
+            "amount": "1勺",
+            "dishName": "红烧狮子头",
+            "dingdongUrl": "https://www.100.me/%E6%B7%80%E7%B2%89"
+          },
+          {
+            "name": "荷兰豆",
+            "amount": "150g",
+            "dishName": "荷塘小炒",
+            "dingdongUrl": "https://www.100.me/%E8%8D%B7%E5%85%B0%E8%B1%86"
+          },
+          {
+            "name": "木耳",
+            "amount": "50g",
+            "dishName": "荷塘小炒",
+            "dingdongUrl": "https://www.100.me/%E6%9C%A8%E8%80%B3"
+          },
+          {
+            "name": "胡萝卜",
+            "amount": "半根",
+            "dishName": "荷塘小炒",
+            "dingdongUrl": "https://www.100.me/%E8%83%A1%E8%90%9D%E5%8D%9C"
+          },
+          {
+            "name": "莲藕",
+            "amount": "1节",
+            "dishName": "荷塘小炒",
+            "dingdongUrl": "https://www.100.me/%E8%8E%B2%E8%97%95"
+          },
+          {
+            "name": "金针菇",
+            "amount": "200g",
+            "dishName": "蒸金针菇",
+            "dingdongUrl": "https://www.100.me/%E9%87%91%E9%92%88%E8%8F%87"
+          },
+          {
+            "name": "蒜末",
+            "amount": "适量",
+            "dishName": "蒸金针菇",
+            "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+          },
+          {
+            "name": "蒸鱼豉油",
+            "amount": "1勺",
+            "dishName": "蒸金针菇",
+            "dingdongUrl": "https://www.100.me/%E8%92%B8%E9%B1%BC%E8%B1%89%E6%B2%B9"
+          },
+          {
+            "name": "紫菜",
+            "amount": "1小包",
+            "dishName": "紫菜蛋花汤",
+            "dingdongUrl": "https://www.100.me/%E7%B4%AB%E8%8F%9C"
+          },
+          {
+            "name": "鸡蛋",
+            "amount": "1个",
+            "dishName": "紫菜蛋花汤",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+          },
+          {
+            "name": "虾皮",
+            "amount": "1勺",
+            "dishName": "紫菜蛋花汤",
+            "dingdongUrl": "https://www.100.me/%E8%99%BE%E7%9A%AE"
+          },
+          {
+            "name": "香油",
+            "amount": "少许",
+            "dishName": "紫菜蛋花汤",
+            "dingdongUrl": "https://www.100.me/%E9%A6%99%E6%B2%B9"
+          }
+        ]
+      },
+      {
+        "day": "周三",
+        "dayIndex": 2,
+        "ingredients": [
+          {
+            "name": "馒头",
+            "amount": "2个",
+            "dishName": "馒头配腐乳",
+            "dingdongUrl": "https://www.100.me/%E9%A6%92%E5%A4%B4"
+          },
+          {
+            "name": "腐乳",
+            "amount": "1块",
+            "dishName": "馒头配腐乳",
+            "dingdongUrl": "https://www.100.me/%E8%85%90%E4%B9%B3"
+          },
+          {
+            "name": "皮蛋",
+            "amount": "1个",
+            "dishName": "皮蛋拌豆腐",
+            "dingdongUrl": "https://www.100.me/%E7%9A%AE%E8%9B%8B"
+          },
+          {
+            "name": "内酯豆腐",
+            "amount": "1盒",
+            "dishName": "皮蛋拌豆腐",
+            "dingdongUrl": "https://www.100.me/%E5%86%85%E9%85%AF%E8%B1%86%E8%85%90"
+          },
+          {
+            "name": "生抽",
+            "amount": "1勺",
+            "dishName": "皮蛋拌豆腐",
+            "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+          },
+          {
+            "name": "香葱",
+            "amount": "适量",
+            "dishName": "皮蛋拌豆腐",
+            "dingdongUrl": "https://www.100.me/%E9%A6%99%E8%91%B1"
+          },
+          {
+            "name": "柠檬",
+            "amount": "半个",
+            "dishName": "柠檬水",
+            "dingdongUrl": "https://www.100.me/%E6%9F%A0%E6%AA%AC"
+          },
+          {
+            "name": "蜂蜜",
+            "amount": "1勺",
+            "dishName": "柠檬水",
+            "dingdongUrl": "https://www.100.me/%E8%9C%82%E8%9C%9C"
+          },
+          {
+            "name": "牛腩",
+            "amount": "400g",
+            "dishName": "番茄牛腩",
+            "dingdongUrl": "https://www.100.me/%E7%89%9B%E8%85%A9"
+          },
+          {
+            "name": "番茄",
+            "amount": "3个",
+            "dishName": "番茄牛腩",
+            "dingdongUrl": "https://www.100.me/%E7%95%AA%E8%8C%84"
+          },
+          {
+            "name": "土豆",
+            "amount": "1个",
+            "dishName": "番茄牛腩",
+            "dingdongUrl": "https://www.100.me/%E5%9C%9F%E8%B1%86"
+          },
+          {
+            "name": "洋葱",
+            "amount": "半个",
+            "dishName": "番茄牛腩",
+            "dingdongUrl": "https://www.100.me/%E6%B4%8B%E8%91%B1"
+          },
+          {
+            "name": "木耳",
+            "amount": "100g",
+            "dishName": "木耳炒鸡蛋",
+            "dingdongUrl": "https://www.100.me/%E6%9C%A8%E8%80%B3"
+          },
+          {
+            "name": "鸡蛋",
+            "amount": "2个",
+            "dishName": "木耳炒鸡蛋",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+          },
+          {
+            "name": "葱花",
+            "amount": "适量",
+            "dishName": "木耳炒鸡蛋",
+            "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+          },
+          {
+            "name": "番茄",
+            "amount": "2个",
+            "dishName": "西红柿炒鸡蛋",
+            "dingdongUrl": "https://www.100.me/%E7%95%AA%E8%8C%84"
+          },
+          {
+            "name": "鸡蛋",
+            "amount": "3个",
+            "dishName": "西红柿炒鸡蛋",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+          },
+          {
+            "name": "白糖",
+            "amount": "1勺",
+            "dishName": "西红柿炒鸡蛋",
+            "dingdongUrl": "https://www.100.me/%E7%99%BD%E7%B3%96"
+          },
+          {
+            "name": "葱花",
+            "amount": "适量",
+            "dishName": "西红柿炒鸡蛋",
+            "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+          },
+          {
+            "name": "番茄",
+            "amount": "2个",
+            "dishName": "番茄土豆汤",
+            "dingdongUrl": "https://www.100.me/%E7%95%AA%E8%8C%84"
+          },
+          {
+            "name": "土豆",
+            "amount": "1个",
+            "dishName": "番茄土豆汤",
+            "dingdongUrl": "https://www.100.me/%E5%9C%9F%E8%B1%86"
+          },
+          {
+            "name": "洋葱",
+            "amount": "半个",
+            "dishName": "番茄土豆汤",
+            "dingdongUrl": "https://www.100.me/%E6%B4%8B%E8%91%B1"
+          }
+        ]
+      },
+      {
+        "day": "周四",
+        "dayIndex": 3,
+        "ingredients": [
+          {
+            "name": "馄饨皮",
+            "amount": "20张",
+            "dishName": "馄饨",
+            "dingdongUrl": "https://www.100.me/%E9%A6%84%E9%A5%A8%E7%9A%AE"
+          },
+          {
+            "name": "猪肉馅",
+            "amount": "150g",
+            "dishName": "馄饨",
+            "dingdongUrl": "https://www.100.me/%E7%8C%AA%E8%82%89%E9%A6%85"
+          },
+          {
+            "name": "紫菜",
+            "amount": "少许",
+            "dishName": "馄饨",
+            "dingdongUrl": "https://www.100.me/%E7%B4%AB%E8%8F%9C"
+          },
+          {
+            "name": "虾皮",
+            "amount": "少许",
+            "dishName": "馄饨",
+            "dingdongUrl": "https://www.100.me/%E8%99%BE%E7%9A%AE"
+          },
+          {
+            "name": "酱菜",
+            "amount": "1小碟",
+            "dishName": "酱菜",
+            "dingdongUrl": "https://www.100.me/%E9%85%B1%E8%8F%9C"
+          },
+          {
+            "name": "蜂蜜",
+            "amount": "2勺",
+            "dishName": "蜂蜜水",
+            "dingdongUrl": "https://www.100.me/%E8%9C%82%E8%9C%9C"
+          },
+          {
+            "name": "排骨",
+            "amount": "500g",
+            "dishName": "红烧排骨",
+            "dingdongUrl": "https://www.100.me/%E6%8E%92%E9%AA%A8"
+          },
+          {
+            "name": "生抽",
+            "amount": "2勺",
+            "dishName": "红烧排骨",
+            "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+          },
+          {
+            "name": "老抽",
+            "amount": "1勺",
+            "dishName": "红烧排骨",
+            "dingdongUrl": "https://www.100.me/%E8%80%81%E6%8A%BD"
+          },
+          {
+            "name": "冰糖",
+            "amount": "20g",
+            "dishName": "红烧排骨",
+            "dingdongUrl": "https://www.100.me/%E5%86%B0%E7%B3%96"
+          },
+          {
+            "name": "菜心",
+            "amount": "300g",
+            "dishName": "白灼菜心",
+            "dingdongUrl": "https://www.100.me/%E8%8F%9C%E5%BF%83"
+          },
+          {
+            "name": "蚝油",
+            "amount": "1勺",
+            "dishName": "白灼菜心",
+            "dingdongUrl": "https://www.100.me/%E8%9A%9D%E6%B2%B9"
+          },
+          {
+            "name": "蒜末",
+            "amount": "适量",
+            "dishName": "白灼菜心",
+            "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+          },
+          {
+            "name": "西兰花",
+            "amount": "1颗",
+            "dishName": "蒜蓉西兰花",
+            "dingdongUrl": "https://www.100.me/%E8%A5%BF%E5%85%B0%E8%8A%B1"
+          },
+          {
+            "name": "蒜末",
+            "amount": "适量",
+            "dishName": "蒜蓉西兰花",
+            "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+          },
+          {
+            "name": "蚝油",
+            "amount": "1勺",
+            "dishName": "蒜蓉西兰花",
+            "dingdongUrl": "https://www.100.me/%E8%9A%9D%E6%B2%B9"
+          },
+          {
+            "name": "鱼头",
+            "amount": "1个",
+            "dishName": "豆腐鱼头汤",
+            "dingdongUrl": "https://www.100.me/%E9%B1%BC%E5%A4%B4"
+          },
+          {
+            "name": "豆腐",
+            "amount": "1块",
+            "dishName": "豆腐鱼头汤",
+            "dingdongUrl": "https://www.100.me/%E8%B1%86%E8%85%90"
+          },
+          {
+            "name": "姜片",
+            "amount": "3片",
+            "dishName": "豆腐鱼头汤",
+            "dingdongUrl": "https://www.100.me/%E5%A7%9C%E7%89%87"
+          },
+          {
+            "name": "葱花",
+            "amount": "适量",
+            "dishName": "豆腐鱼头汤",
+            "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+          }
+        ]
+      },
+      {
+        "day": "周五",
+        "dayIndex": 4,
+        "ingredients": [
+          {
+            "name": "大米",
+            "amount": "100g",
+            "dishName": "皮蛋瘦肉粥",
+            "dingdongUrl": "https://www.100.me/%E5%A4%A7%E7%B1%B3"
+          },
+          {
+            "name": "皮蛋",
+            "amount": "1个",
+            "dishName": "皮蛋瘦肉粥",
+            "dingdongUrl": "https://www.100.me/%E7%9A%AE%E8%9B%8B"
+          },
+          {
+            "name": "猪瘦肉",
+            "amount": "100g",
+            "dishName": "皮蛋瘦肉粥",
+            "dingdongUrl": "https://www.100.me/%E7%8C%AA%E7%98%A6%E8%82%89"
+          },
+          {
+            "name": "姜丝",
+            "amount": "适量",
+            "dishName": "皮蛋瘦肉粥",
+            "dingdongUrl": "https://www.100.me/%E5%A7%9C%E4%B8%9D"
+          },
+          {
+            "name": "鸡蛋",
+            "amount": "2个",
+            "dishName": "茶叶蛋",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+          },
+          {
+            "name": "茶叶",
+            "amount": "1小包",
+            "dishName": "茶叶蛋",
+            "dingdongUrl": "https://www.100.me/%E8%8C%B6%E5%8F%B6"
+          },
+          {
+            "name": "八角",
+            "amount": "2个",
+            "dishName": "茶叶蛋",
+            "dingdongUrl": "https://www.100.me/%E5%85%AB%E8%A7%92"
+          },
+          {
+            "name": "桂皮",
+            "amount": "1小块",
+            "dishName": "茶叶蛋",
+            "dingdongUrl": "https://www.100.me/%E6%A1%82%E7%9A%AE"
+          },
+          {
+            "name": "红豆",
+            "amount": "50g",
+            "dishName": "红豆汤",
+            "dingdongUrl": "https://www.100.me/%E7%BA%A2%E8%B1%86"
+          },
+          {
+            "name": "冰糖",
+            "amount": "适量",
+            "dishName": "红豆汤",
+            "dingdongUrl": "https://www.100.me/%E5%86%B0%E7%B3%96"
+          },
+          {
+            "name": "小排",
+            "amount": "500g",
+            "dishName": "糖醋排骨",
+            "dingdongUrl": "https://www.100.me/%E5%B0%8F%E6%8E%92"
+          },
+          {
+            "name": "醋",
+            "amount": "3勺",
+            "dishName": "糖醋排骨",
+            "dingdongUrl": "https://www.100.me/%E9%86%8B"
+          },
+          {
+            "name": "白糖",
+            "amount": "2勺",
+            "dishName": "糖醋排骨",
+            "dingdongUrl": "https://www.100.me/%E7%99%BD%E7%B3%96"
+          },
+          {
+            "name": "番茄酱",
+            "amount": "1勺",
+            "dishName": "糖醋排骨",
+            "dingdongUrl": "https://www.100.me/%E7%95%AA%E8%8C%84%E9%85%B1"
+          },
+          {
+            "name": "葱姜",
+            "amount": "适量",
+            "dishName": "糖醋排骨",
+            "dingdongUrl": "https://www.100.me/%E8%91%B1%E5%A7%9C"
+          },
+          {
+            "name": "香菇",
+            "amount": "5朵",
+            "dishName": "香菇青菜",
+            "dingdongUrl": "https://www.100.me/%E9%A6%99%E8%8F%87"
+          },
+          {
+            "name": "小青菜",
+            "amount": "200g",
+            "dishName": "香菇青菜",
+            "dingdongUrl": "https://www.100.me/%E5%B0%8F%E9%9D%92%E8%8F%9C"
+          },
+          {
+            "name": "蚝油",
+            "amount": "1勺",
+            "dishName": "香菇青菜",
+            "dingdongUrl": "https://www.100.me/%E8%9A%9D%E6%B2%B9"
+          },
+          {
+            "name": "木耳菜",
+            "amount": "200g",
+            "dishName": "凉拌木耳菜",
+            "dingdongUrl": "https://www.100.me/%E6%9C%A8%E8%80%B3%E8%8F%9C"
+          },
+          {
+            "name": "蒜末",
+            "amount": "适量",
+            "dishName": "凉拌木耳菜",
+            "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+          },
+          {
+            "name": "香醋",
+            "amount": "1勺",
+            "dishName": "凉拌木耳菜",
+            "dingdongUrl": "https://www.100.me/%E9%A6%99%E9%86%8B"
+          },
+          {
+            "name": "菠菜",
+            "amount": "200g",
+            "dishName": "菠菜蛋花汤",
+            "dingdongUrl": "https://www.100.me/%E8%8F%A0%E8%8F%9C"
+          },
+          {
+            "name": "鸡蛋",
+            "amount": "1个",
+            "dishName": "菠菜蛋花汤",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+          },
+          {
+            "name": "香油",
+            "amount": "少许",
+            "dishName": "菠菜蛋花汤",
+            "dingdongUrl": "https://www.100.me/%E9%A6%99%E6%B2%B9"
+          }
+        ]
+      },
+      {
+        "day": "周六",
+        "dayIndex": 5,
+        "ingredients": [
+          {
+            "name": "面粉",
+            "amount": "200g",
+            "dishName": "发糕",
+            "dingdongUrl": "https://www.100.me/%E9%9D%A2%E7%B2%89"
+          },
+          {
+            "name": "红枣",
+            "amount": "5颗",
+            "dishName": "发糕",
+            "dingdongUrl": "https://www.100.me/%E7%BA%A2%E6%9E%A3"
+          },
+          {
+            "name": "酵母",
+            "amount": "3g",
+            "dishName": "发糕",
+            "dingdongUrl": "https://www.100.me/%E9%85%B5%E6%AF%8D"
+          },
+          {
+            "name": "黑木耳",
+            "amount": "50g",
+            "dishName": "凉拌木耳",
+            "dingdongUrl": "https://www.100.me/%E9%BB%91%E6%9C%A8%E8%80%B3"
+          },
+          {
+            "name": "蒜末",
+            "amount": "适量",
+            "dishName": "凉拌木耳",
+            "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+          },
+          {
+            "name": "香醋",
+            "amount": "1勺",
+            "dishName": "凉拌木耳",
+            "dingdongUrl": "https://www.100.me/%E9%A6%99%E9%86%8B"
+          },
+          {
+            "name": "香油",
+            "amount": "少许",
+            "dishName": "凉拌木耳",
+            "dingdongUrl": "https://www.100.me/%E9%A6%99%E6%B2%B9"
+          },
+          {
+            "name": "黄豆",
+            "amount": "50g",
+            "dishName": "豆浆",
+            "dingdongUrl": "https://www.100.me/%E9%BB%84%E8%B1%86"
+          },
+          {
+            "name": "猪里脊",
+            "amount": "200g",
+            "dishName": "青椒肉丝",
+            "dingdongUrl": "https://www.100.me/%E7%8C%AA%E9%87%8C%E8%84%8A"
+          },
+          {
+            "name": "青椒",
+            "amount": "2个",
+            "dishName": "青椒肉丝",
+            "dingdongUrl": "https://www.100.me/%E9%9D%92%E6%A4%92"
+          },
+          {
+            "name": "生抽",
+            "amount": "1勺",
+            "dishName": "青椒肉丝",
+            "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+          },
+          {
+            "name": "淀粉",
+            "amount": "1勺",
+            "dishName": "青椒肉丝",
+            "dingdongUrl": "https://www.100.me/%E6%B7%80%E7%B2%89"
+          },
+          {
+            "name": "南瓜",
+            "amount": "300g",
+            "dishName": "炒南瓜",
+            "dingdongUrl": "https://www.100.me/%E5%8D%97%E7%93%9C"
+          },
+          {
+            "name": "葱花",
+            "amount": "适量",
+            "dishName": "炒南瓜",
+            "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+          },
+          {
+            "name": "盐",
+            "amount": "适量",
+            "dishName": "炒南瓜",
+            "dingdongUrl": "https://www.100.me/%E7%9B%90"
+          },
+          {
+            "name": "茄子",
+            "amount": "1根",
+            "dishName": "地三鲜",
+            "dingdongUrl": "https://www.100.me/%E8%8C%84%E5%AD%90"
+          },
+          {
+            "name": "土豆",
+            "amount": "1个",
+            "dishName": "地三鲜",
+            "dingdongUrl": "https://www.100.me/%E5%9C%9F%E8%B1%86"
+          },
+          {
+            "name": "青椒",
+            "amount": "1个",
+            "dishName": "地三鲜",
+            "dingdongUrl": "https://www.100.me/%E9%9D%92%E6%A4%92"
+          },
+          {
+            "name": "生抽",
+            "amount": "1勺",
+            "dishName": "地三鲜",
+            "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+          },
+          {
+            "name": "淀粉",
+            "amount": "1勺",
+            "dishName": "地三鲜",
+            "dingdongUrl": "https://www.100.me/%E6%B7%80%E7%B2%89"
+          },
+          {
+            "name": "虾滑",
+            "amount": "150g",
+            "dishName": "虾滑汤",
+            "dingdongUrl": "https://www.100.me/%E8%99%BE%E6%BB%91"
+          },
+          {
+            "name": "鸡蛋",
+            "amount": "1个",
+            "dishName": "虾滑汤",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+          },
+          {
+            "name": "紫菜",
+            "amount": "少许",
+            "dishName": "虾滑汤",
+            "dingdongUrl": "https://www.100.me/%E7%B4%AB%E8%8F%9C"
+          },
+          {
+            "name": "香菜",
+            "amount": "适量",
+            "dishName": "虾滑汤",
+            "dingdongUrl": "https://www.100.me/%E9%A6%99%E8%8F%9C"
+          }
+        ]
+      },
+      {
+        "day": "周日",
+        "dayIndex": 6,
+        "ingredients": [
+          {
+            "name": "挂面",
+            "amount": "150g",
+            "dishName": "葱油拌面",
+            "dingdongUrl": "https://www.100.me/%E6%8C%82%E9%9D%A2"
+          },
+          {
+            "name": "小葱",
+            "amount": "3根",
+            "dishName": "葱油拌面",
+            "dingdongUrl": "https://www.100.me/%E5%B0%8F%E8%91%B1"
+          },
+          {
+            "name": "生抽",
+            "amount": "2勺",
+            "dishName": "葱油拌面",
+            "dingdongUrl": "https://www.100.me/%E7%94%9F%E6%8A%BD"
+          },
+          {
+            "name": "老抽",
+            "amount": "1勺",
+            "dishName": "葱油拌面",
+            "dingdongUrl": "https://www.100.me/%E8%80%81%E6%8A%BD"
+          },
+          {
+            "name": "鸡蛋",
+            "amount": "2个",
+            "dishName": "蒸蛋羹",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+          },
+          {
+            "name": "干菊花",
+            "amount": "5朵",
+            "dishName": "菊花茶",
+            "dingdongUrl": "https://www.100.me/%E5%B9%B2%E8%8F%8A%E8%8A%B1"
+          },
+          {
+            "name": "冰糖",
+            "amount": "1勺",
+            "dishName": "菊花茶",
+            "dingdongUrl": "https://www.100.me/%E5%86%B0%E7%B3%96"
+          },
+          {
+            "name": "鸡腿",
+            "amount": "3个",
+            "dishName": "黄焖鸡",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%85%BF"
+          },
+          {
+            "name": "香菇",
+            "amount": "5朵",
+            "dishName": "黄焖鸡",
+            "dingdongUrl": "https://www.100.me/%E9%A6%99%E8%8F%87"
+          },
+          {
+            "name": "青椒",
+            "amount": "1个",
+            "dishName": "黄焖鸡",
+            "dingdongUrl": "https://www.100.me/%E9%9D%92%E6%A4%92"
+          },
+          {
+            "name": "黄焖酱",
+            "amount": "2勺",
+            "dishName": "黄焖鸡",
+            "dingdongUrl": "https://www.100.me/%E9%BB%84%E7%84%96%E9%85%B1"
+          },
+          {
+            "name": "土豆",
+            "amount": "1个",
+            "dishName": "黄焖鸡",
+            "dingdongUrl": "https://www.100.me/%E5%9C%9F%E8%B1%86"
+          },
+          {
+            "name": "土豆",
+            "amount": "2个",
+            "dishName": "炒土豆丝",
+            "dingdongUrl": "https://www.100.me/%E5%9C%9F%E8%B1%86"
+          },
+          {
+            "name": "干辣椒",
+            "amount": "2个",
+            "dishName": "炒土豆丝",
+            "dingdongUrl": "https://www.100.me/%E5%B9%B2%E8%BE%A3%E6%A4%92"
+          },
+          {
+            "name": "醋",
+            "amount": "1勺",
+            "dishName": "炒土豆丝",
+            "dingdongUrl": "https://www.100.me/%E9%86%8B"
+          },
+          {
+            "name": "葱花",
+            "amount": "适量",
+            "dishName": "炒土豆丝",
+            "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+          },
+          {
+            "name": "莴笋",
+            "amount": "1根",
+            "dishName": "清炒莴笋",
+            "dingdongUrl": "https://www.100.me/%E8%8E%B4%E7%AC%8B"
+          },
+          {
+            "name": "蒜末",
+            "amount": "适量",
+            "dishName": "清炒莴笋",
+            "dingdongUrl": "https://www.100.me/%E8%92%9C%E6%9C%AB"
+          },
+          {
+            "name": "番茄",
+            "amount": "1个",
+            "dishName": "番茄蛋汤",
+            "dingdongUrl": "https://www.100.me/%E7%95%AA%E8%8C%84"
+          },
+          {
+            "name": "鸡蛋",
+            "amount": "1个",
+            "dishName": "番茄蛋汤",
+            "dingdongUrl": "https://www.100.me/%E9%B8%A1%E8%9B%8B"
+          },
+          {
+            "name": "香油",
+            "amount": "少许",
+            "dishName": "番茄蛋汤",
+            "dingdongUrl": "https://www.100.me/%E9%A6%99%E6%B2%B9"
+          },
+          {
+            "name": "葱花",
+            "amount": "适量",
+            "dishName": "番茄蛋汤",
+            "dingdongUrl": "https://www.100.me/%E8%91%B1%E8%8A%B1"
+          }
+        ]
+      }
+    ]
+  }
+}

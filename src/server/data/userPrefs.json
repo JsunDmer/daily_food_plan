@@ -1,0 +1,13 @@
+{
+  "favorites": [
+    "bs001"
+  ],
+  "dislikes": [
+    "dv001"
+  ],
+  "customRecipes": [],
+  "weights": {
+    "bs001": 2,
+    "dv001": 0
+  }
+}
