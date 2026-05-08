@@ -33,7 +33,7 @@ DENSITIES=( "mdpi:1" "hdpi:1.5" "xhdpi:2" "xxhdpi:3" "xxxhdpi:4" )
 LEGACY_SIZES=( "mdpi:48" "hdpi:72" "xhdpi:96" "xxhdpi:144" "xxxhdpi:192" )
 
 # 安装 rsvg-convert
-apt-get update -qq && apt-get install -y -qq librsvg2-bin > /dev/null 2>&1
+sudo apt-get update -qq && sudo apt-get install -y -qq librsvg2-bin > /dev/null 2>&1
 
 for entry in "${DENSITIES[@]}"; do
   dir="mipmap-${entry%%:*}"
@@ -47,7 +47,7 @@ done
 # 生成 legacy 图标 (单色背景 + 前景合成)
 echo "[5/6] 生成 legacy 图标 (ic_launcher.png) ..."
 ORANGE="#E85D04"
-apt-get install -y -qq imagemagick > /dev/null 2>&1
+sudo apt-get install -y -qq imagemagick > /dev/null 2>&1
 
 for entry in "${LEGACY_SIZES[@]}"; do
   dir="mipmap-${entry%%:*}"
