@@ -79,15 +79,7 @@ jobs:
         env:
           GRADLE_OPTS: -Dorg.gradle.daemon=false
       
-      # 8. 构建 Staging APK (Release + 可调试)
-      # staging build 类型 = release 行为但可查看详细日志
-      - name: Build Staging APK
-        run: |
-          cd android
-          ./gradlew assembleStaging --no-daemon --quiet
-        continue-on-error: true
-      
-      # 9. 上传 APK 到 Artifacts
+      # 8. 上传 APK 到 Artifacts
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         if: success()
