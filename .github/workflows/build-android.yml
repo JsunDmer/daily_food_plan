@@ -30,11 +30,11 @@ jobs:
       # 1. 检出代码
       - uses: actions/checkout@v4
       
-      # 2. 设置 JDK 17 (必需)
+      # 2. 设置 JDK 21 (Capacitor 生成的构建文件要求 VERSION_21)
       - name: Set up JDK
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
       
       # 3. 设置 Node.js
