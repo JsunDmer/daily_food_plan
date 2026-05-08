@@ -1,8 +1,13 @@
 <template>
   <div class="dish-card">
-    <div class="dish-name">{{ dish.name }}</div>
-    <div class="dish-desc" v-if="dish.description">{{ dish.description }}</div>
-    <IngredientList :ingredients="dish.ingredients" />
+    <div v-if="dish.image" class="dish-card-image">
+      <img :src="dish.image" :alt="dish.name" class="recipe-image" />
+    </div>
+    <div class="dish-card-content">
+      <div class="dish-name">{{ dish.name }}</div>
+      <div class="dish-desc" v-if="dish.description">{{ dish.description }}</div>
+      <IngredientList :ingredients="dish.ingredients" />
+    </div>
   </div>
 </template>
 
@@ -16,6 +21,8 @@ defineProps({
 
 <style scoped>
 .dish-card {
+  display: flex;
+  gap: var(--space-md);
   background: var(--bg-secondary);
   border-radius: var(--radius-sm);
   padding: var(--space-md);
@@ -25,6 +32,26 @@ defineProps({
 .dish-card:hover {
   background: var(--card-hover);
   transform: translateX(4px);
+}
+
+.dish-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.dish-card-image {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.dish-card-image .recipe-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .dish-name {
@@ -43,7 +70,15 @@ defineProps({
 
 @media (max-width: 767px) {
   .dish-card {
+    flex-direction: column;
     padding: var(--space-sm) var(--space-md);
+  }
+
+  .dish-card-image {
+    width: 100%;
+    height: auto;
+    min-width: unset;
+    aspect-ratio: 16 / 9;
   }
 
   .dish-name {

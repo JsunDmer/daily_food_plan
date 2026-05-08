@@ -25,11 +25,12 @@
               type="button"
               role="tab"
               class="day-tab"
-              :class="{ active: index === activeDayIndex }"
+              :class="{ active: index === activeDayIndex, today: isTodayDay(day) }"
               :aria-selected="index === activeDayIndex"
               @click="setActiveDay(index)"
             >
-              {{ day.day }}
+              <span class="day-name">{{ day.day }}</span>
+              <span v-if="day.displayDate" class="day-date">{{ day.displayDate }}</span>
             </button>
           </div>
 
@@ -53,6 +54,7 @@
             v-if="activeDay"
             :key="activeDay.dayIndex"
             :day="activeDay"
+            :isToday="isTodayDay(activeDay)"
             @regenerate="handleRegenerateDay"
           />
         </transition>
@@ -63,6 +65,7 @@
           v-for="day in days"
           :key="day.dayIndex"
           :day="day"
+          :isToday="isTodayDay(day)"
           @regenerate="handleRegenerateDay"
         />
       </div>
@@ -73,9 +76,11 @@
 <script setup>
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import DayPlan from './DayPlan.vue'
+import { getTodayString } from '../services/dateUtils.js'
 
 const props = defineProps({
-  days: { type: Array, default: () => [] }
+  days: { type: Array, default: () => [] },
+  currentWeek: { type: String, default: '' }
 })
 
 const emit = defineEmits(['regenerate-day'])
@@ -150,6 +155,10 @@ function goNextDay() {
 
 function handleRegenerateDay(dayIndex) {
   emit('regenerate-day', dayIndex)
+}
+
+function isTodayDay(day) {
+  return day.date === getTodayString()
 }
 </script>
 
@@ -244,18 +253,47 @@ function handleRegenerateDay(dayIndex) {
   background: var(--bg-secondary);
   color: var(--text-secondary);
   border-radius: 999px;
-  padding: 8px 12px;
+  padding: 6px 10px;
   min-height: 36px;
   white-space: nowrap;
   font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
   transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  line-height: 1.2;
+}
+
+.day-name {
+  display: block;
+}
+
+.day-date {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--text-muted);
 }
 
 .day-tab.active {
   color: var(--primary-dark);
   border-color: rgba(232, 93, 4, 0.35);
+  background: var(--primary-subtle);
+}
+
+.day-tab.today {
+  border-color: var(--success);
+  background: var(--success-light);
+}
+
+.day-tab.today .day-date {
+  color: var(--success);
+}
+
+.day-tab.active.today {
   background: var(--primary-subtle);
 }
 

@@ -1,7 +1,10 @@
 <template>
-  <div class="day-plan">
+  <div class="day-plan" :class="{ 'is-today': isToday }">
     <div class="day-header">
-      <h3 class="day-title">{{ day.day }}</h3>
+      <h3 class="day-title">
+        <span class="day-name">{{ day.day }}</span>
+        <span v-if="day.displayDate" class="day-date">{{ day.displayDate }}</span>
+      </h3>
       <button class="btn btn-ghost btn-sm" @click="$emit('regenerate', day.dayIndex)">
         换一批
       </button>
@@ -38,7 +41,8 @@ import { computed } from 'vue'
 import MealSection from './MealSection.vue'
 
 const props = defineProps({
-  day: { type: Object, required: true }
+  day: { type: Object, required: true },
+  isToday: { type: Boolean, default: false }
 })
 
 defineEmits(['regenerate'])
@@ -82,10 +86,31 @@ const dayIngredients = computed(() => {
   background: linear-gradient(135deg, var(--primary-subtle) 0%, var(--card-bg) 100%);
 }
 
+.day-plan.is-today .day-header {
+  background: linear-gradient(135deg, var(--success-light) 0%, var(--card-bg) 100%);
+}
+
 .day-title {
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.day-name {
+  display: inline;
+}
+
+.day-date {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.is-today .day-date {
+  color: var(--success);
 }
 
 .day-header .btn-sm {
