@@ -56,7 +56,7 @@ for entry in "${LEGACY_SIZES[@]}"; do
 
   fg_png=$(mktemp)
   rsvg-convert "$ICON_SVG" -w "$fg_size" -h "$fg_size" -o "$fg_png"
-  magick convert -size "${size}x${size}" "xc:$ORANGE" \
+  convert -size "${size}x${size}" "xc:$ORANGE" \
     "$fg_png" -gravity center -composite \
     "$ANDROID/app/src/main/res/$dir/ic_launcher.png"
   cp "$ANDROID/app/src/main/res/$dir/ic_launcher.png" \
