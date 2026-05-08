@@ -4,5 +4,5 @@ dist/
 *.log
 .DS_Store
 
-# Android 原生项目由 CI 自动生成
-android/
+# Android 原生项目由 CI 自动生成（仅根目录）
+/android/
