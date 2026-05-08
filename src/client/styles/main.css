@@ -38,6 +38,9 @@
   --dingdong: #10b981;
   --dingdong-light: #d1fae5;
 
+  --success: #10b981;
+  --success-light: #d1fae5;
+
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 12px;
@@ -331,4 +334,82 @@ input, select, textarea {
 
 .animate-pulse {
   animation: pulse 1.5s ease infinite;
+}
+
+/* Recipe Image Container - 1:1 aspect ratio */
+.recipe-image-container {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--bg-secondary);
+  position: relative;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.recipe-image-container:hover .recipe-image {
+  transform: scale(1.05);
+}
+
+/* Warm tone overlay */
+.recipe-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(232, 93, 4, 0.08) 0%,
+    rgba(244, 140, 6, 0.12) 50%,
+    rgba(255, 243, 224, 0.05) 100%
+  );
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+/* Placeholder while loading */
+.recipe-image-placeholder {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--primary-subtle) 0%,
+    var(--bg-secondary) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+}
+
+.recipe-image-placeholder svg {
+  width: 40%;
+  height: 40%;
+  opacity: 0.4;
+}
+
+/* DishCard small image */
+.dish-card-image {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.dish-card-image .recipe-image {
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .dish-card-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
 }
