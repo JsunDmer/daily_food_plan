@@ -3,3 +3,6 @@ dist/
 .env
 *.log
 .DS_Store
+
+# Android 原生项目由 CI 自动生成
+android/

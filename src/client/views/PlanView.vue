@@ -14,32 +14,52 @@ import { generatePlan, getCurrentPlan, regenerateDay } from '../services/index.j
 const plan = ref(null)
 const loading = ref(false)
 
+function getErrorMessage(err, fallback = '请稍后重试') {
+  if (err instanceof Error && err.message) return err.message
+  if (typeof err === 'string' && err) return err
+  return fallback
+}
+
+function ensureServiceData(res, fallbackMessage) {
+  if (!res?.success) {
+    throw new Error(res?.message || fallbackMessage)
+  }
+  if (!res.data) {
+    throw new Error(fallbackMessage)
+  }
+  return res.data
+}
+
 onMounted(async () => {
   try {
     const res = await getCurrentPlan()
-    if (res.data) plan.value = res.data
+    if (res?.success && res.data) {
+      plan.value = res.data
+    }
   } catch {}
 })
 
 async function handleGenerate() {
+  if (loading.value) return
   loading.value = true
   try {
     const res = await generatePlan()
-    plan.value = res.data
+    plan.value = ensureServiceData(res, '未生成计划数据')
   } catch (err) {
-    alert('生成失败：' + err.message)
+    alert('生成失败：' + getErrorMessage(err))
   } finally {
     loading.value = false
   }
 }
 
 async function handleRegenerateAll() {
+  if (loading.value) return
   loading.value = true
   try {
     const res = await generatePlan()
-    plan.value = res.data
+    plan.value = ensureServiceData(res, '未生成计划数据')
   } catch (err) {
-    alert('重新生成失败：' + err.message)
+    alert('重新生成失败：' + getErrorMessage(err))
   } finally {
     loading.value = false
   }
@@ -48,9 +68,9 @@ async function handleRegenerateAll() {
 async function handleRegenerateDay(dayIndex) {
   try {
     const res = await regenerateDay(dayIndex)
-    plan.value = res.data
+    plan.value = ensureServiceData(res, '未返回当天计划数据')
   } catch (err) {
-    alert('重新生成失败：' + err.message)
+    alert('重新生成失败：' + getErrorMessage(err))
   }
 }
 </script>

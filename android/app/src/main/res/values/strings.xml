@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">一周饮食计划</string>
-    <string name="title_activity_main">一周饮食计划</string>
-    <string name="package_name">com.example.dailyfoodplan</string>
-    <string name="custom_url_scheme">com.example.dailyfoodplan</string>
-</resources>

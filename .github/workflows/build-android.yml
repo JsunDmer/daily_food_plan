@@ -1,12 +1,5 @@
 # 构建 Android APK (GitHub Actions 云构建)
-# 
-# 技术栈：Vite + Vue 3 + Capacitor → Android APK
-# 无需本地安装 Android SDK，完全云端构建
-#
-# 触发条件：
-# - push 到 app 分支
-# - 手动触发 (workflow_dispatch)
-# 自动上传到 Artifacts
+# android/ 由 CI 自动生成，不提交到 Git
 
 name: Build Android APK
 
@@ -17,7 +10,6 @@ on:
     branches: [app]
   workflow_dispatch:
 
-# 防止并发构建产生冲突
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
@@ -27,37 +19,31 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      # 1. 检出代码
       - uses: actions/checkout@v4
       
-      # 2. 设置 JDK 21 (Capacitor 生成的构建文件要求 VERSION_21)
-      - name: Set up JDK
+      - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
           java-version: '21'
           distribution: 'temurin'
       
-      # 3. 设置 Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22.0.0'
           cache: 'npm'
       
-      # 4. 安装项目依赖
       - name: Install dependencies
         run: npm ci --prefer-offline
       
-      # 5. 构建前端 Web 资源
       - name: Build web assets
         run: npm run build
       
-      # 6. 同步 Capacitor (复制 web 资源到 Android 项目)
-      - name: Sync Capacitor
-        run: npx cap sync
+      - name: Generate Android project
+        run: bash scripts/setup-android.sh
+        env:
+          CI: true
       
-      # 7. 使用 Gradle 构建 Debug APK
-      # 先构建 debug 版本，无需签名证书
       - name: Install Android SDK
         uses: android-actions/setup-android@v3
         with:
@@ -79,7 +65,6 @@ jobs:
         env:
           GRADLE_OPTS: -Dorg.gradle.daemon=false
       
-      # 8. 上传 APK 到 Artifacts
       - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         if: success()
@@ -98,18 +83,9 @@ jobs:
           retention-days: 30
           if-no-files-found: warn
       
-      # 10. 显示构建结果摘要
       - name: Show build summary
         if: always()
         run: |
-          echo "=== 构建结果 ==="
-          echo ""
-          if [ -d "android/app/build/outputs/apk/debug" ]; then
-            echo "Debug APK:"
-            ls -lh android/app/build/outputs/apk/debug/*.apk 2>/dev/null || echo "  (不存在)"
-          fi
-          if [ -d "android/app/build/outputs/apk/staging" ]; then
-            echo ""
-            echo "Staging APK:"
-            ls -lh android/app/build/outputs/apk/staging/*.apk 2>/dev/null || echo "  (不存在)"
-          fi
+          echo "=== Build Results ==="
+          ls -lh android/app/build/outputs/apk/debug/*.apk 2>/dev/null && echo "Debug APK OK" || echo "No Debug APK"
+          ls -lh android/app/build/outputs/apk/staging/*.apk 2>/dev/null && echo "Staging APK OK" || echo "No Staging APK"

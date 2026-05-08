@@ -7,7 +7,11 @@ import {
   updateCustomRecipe
 } from './localData.js'
 
-import { generateWeekPlan, getCurrentPlan, regenerateDay } from './planGenerator.js'
+import {
+  generateWeekPlan,
+  getCurrentPlan as getCurrentPlanRaw,
+  regenerateDay as regenerateDayRaw
+} from './planGenerator.js'
 
 const SUCCESS = (data) => ({ success: true, data })
 const ERROR = (msg) => ({ success: false, message: msg })
@@ -43,7 +47,17 @@ function findRecipeById(id) {
 
 // == 计划相关 ============================================================
 
-export { generateWeekPlan as generatePlan, getCurrentPlan, regenerateDay }
+export function generatePlan() {
+  return SUCCESS(generateWeekPlan())
+}
+
+export function getCurrentPlan() {
+  return SUCCESS(getCurrentPlanRaw())
+}
+
+export function regenerateDay(dayIndex) {
+  return SUCCESS(regenerateDayRaw(dayIndex))
+}
 
 // == 菜谱相关 ============================================================
 
