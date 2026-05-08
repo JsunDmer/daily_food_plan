@@ -1,0 +1,26 @@
+{
+  "name": "daily-food-plan",
+  "version": "1.0.0",
+  "description": "一周饮食计划生成工具",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "node src/server/index.js",
+    "dev:client": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "seed": "node scripts/seedRecipes.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "vue": "^3.5.0",
+    "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0",
+    "@vitejs/plugin-vue": "^5.2.0",
+    "concurrently": "^9.1.0"
+  }
+}
