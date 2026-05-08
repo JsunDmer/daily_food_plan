@@ -4,6 +4,7 @@
 const PREFS_KEY = 'daily_food_plan_prefs'
 const PLAN_KEY = 'daily_food_plan_current'
 const CUSTOM_RECIPES_KEY = 'daily_food_plan_custom_recipes'
+const PLANS_KEY = 'daily_food_plan_plans'
 
 const DEFAULT_PREFS = {
   favorites: [],
@@ -96,4 +97,38 @@ export function updateCustomRecipe(id, data) {
   recipes[idx] = { ...recipes[idx], ...data, id }
   saveCustomRecipes(recipes)
   return recipes[idx]
+}
+
+// == 多周计划存储 (周导航) ==================================================
+
+function loadAllPlans() {
+  const raw = localStorage.getItem(PLANS_KEY)
+  if (!raw) return {}
+  return safeJsonParse(raw, {})
+}
+
+function saveAllPlans(plans) {
+  localStorage.setItem(PLANS_KEY, JSON.stringify(plans))
+}
+
+export function loadPlanByWeek(weekKey) {
+  const plans = loadAllPlans()
+  return plans[weekKey] || null
+}
+
+export function savePlanByWeek(weekKey, plan) {
+  const plans = loadAllPlans()
+  plans[weekKey] = plan
+  saveAllPlans(plans)
+}
+
+export function removePlanByWeek(weekKey) {
+  const plans = loadAllPlans()
+  delete plans[weekKey]
+  saveAllPlans(plans)
+}
+
+export function getAllWeekKeys() {
+  const plans = loadAllPlans()
+  return Object.keys(plans).sort()
 }

@@ -2,7 +2,8 @@
 // 使用 localStorage 替代服务端文件 IO
 
 import recipesData from '../data/recipes.json'
-import { loadPrefs, savePlan, loadPlan } from './localData.js'
+import { loadPrefs, loadPlanByWeek, savePlanByWeek } from './localData.js'
+import { getWeekDays, getCurrentWeekKey } from './dateUtils.js'
 
 const DINGDONG_BASE = 'https://www.100.me/'
 
@@ -133,7 +134,8 @@ function buildShoppingList(weekDays) {
   return result
 }
 
-export function generateWeekPlan() {
+export function generateWeekPlan(weekKey) {
+  const targetWeekKey = weekKey || getCurrentWeekKey()
   const prefs = loadPrefs()
   const season = getCurrentSeason()
 
@@ -145,12 +147,15 @@ export function generateWeekPlan() {
   const usedIds = new Set()
   const nutritionBalance = {}
   const weekPlan = []
+  const weekDays = getWeekDays(targetWeekKey)
 
   for (let i = 0; i < 7; i++) {
     const dayPlan = generateDayPlan(allRecipes, prefs, season, usedIds, nutritionBalance)
     weekPlan.push({
-      day: WEEKDAYS[i],
+      day: weekDays[i].day,
       dayIndex: i,
+      date: weekDays[i].date,
+      displayDate: weekDays[i].displayDate,
       ...dayPlan
     })
   }
@@ -159,18 +164,20 @@ export function generateWeekPlan() {
 
   const plan = {
     id: Date.now().toString(),
+    weekKey: targetWeekKey,
     createdAt: new Date().toISOString(),
     season,
     days: weekPlan,
     shoppingList
   }
 
-  savePlan(plan)
+  savePlanByWeek(targetWeekKey, plan)
   return plan
 }
 
-export function regenerateDay(dayIndex) {
-  const currentPlan = loadPlan()
+export function regenerateDay(dayIndex, weekKey) {
+  const targetWeekKey = weekKey || getCurrentWeekKey()
+  const currentPlan = loadPlanByWeek(targetWeekKey)
   if (!currentPlan) {
     throw new Error('没有当前计划，请先生成一周计划')
   }
@@ -193,18 +200,22 @@ export function regenerateDay(dayIndex) {
 
   const nutritionBalance = {}
   const newDayPlan = generateDayPlan(allRecipes, prefs, season, usedIds, nutritionBalance)
+  const weekDays = getWeekDays(targetWeekKey)
 
   currentPlan.days[dayIndex] = {
-    day: WEEKDAYS[dayIndex],
+    day: weekDays[dayIndex].day,
     dayIndex,
+    date: weekDays[dayIndex].date,
+    displayDate: weekDays[dayIndex].displayDate,
     ...newDayPlan
   }
 
   currentPlan.shoppingList = buildShoppingList(currentPlan.days)
-  savePlan(currentPlan)
+  savePlanByWeek(targetWeekKey, currentPlan)
   return currentPlan
 }
 
-export function getCurrentPlan() {
-  return loadPlan()
+export function getCurrentPlan(weekKey) {
+  const targetWeekKey = weekKey || getCurrentWeekKey()
+  return loadPlanByWeek(targetWeekKey)
 }

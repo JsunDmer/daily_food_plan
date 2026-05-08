@@ -13,6 +13,8 @@ import {
   regenerateDay as regenerateDayRaw
 } from './planGenerator.js'
 
+import { getCurrentWeekKey } from './dateUtils.js'
+
 const SUCCESS = (data) => ({ success: true, data })
 const ERROR = (msg) => ({ success: false, message: msg })
 
@@ -47,16 +49,19 @@ function findRecipeById(id) {
 
 // == 计划相关 ============================================================
 
-export function generatePlan() {
-  return SUCCESS(generateWeekPlan())
+export function generatePlan(weekKey) {
+  const targetWeek = weekKey || getCurrentWeekKey()
+  return SUCCESS(generateWeekPlan(targetWeek))
 }
 
-export function getCurrentPlan() {
-  return SUCCESS(getCurrentPlanRaw())
+export function getCurrentPlan(weekKey) {
+  const targetWeek = weekKey || getCurrentWeekKey()
+  return SUCCESS(getCurrentPlanRaw(targetWeek))
 }
 
-export function regenerateDay(dayIndex) {
-  return SUCCESS(regenerateDayRaw(dayIndex))
+export function regenerateDay(dayIndex, weekKey) {
+  const targetWeek = weekKey || getCurrentWeekKey()
+  return SUCCESS(regenerateDayRaw(dayIndex, targetWeek))
 }
 
 // == 菜谱相关 ============================================================
