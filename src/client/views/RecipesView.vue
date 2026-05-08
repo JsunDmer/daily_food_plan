@@ -54,6 +54,15 @@
     <div v-if="loading" class="loading">加载中...</div>
     <div v-else class="recipe-grid">
       <div v-for="recipe in filteredRecipes" :key="recipe.id" class="recipe-card" :class="{ disliked: recipe.isDisliked }">
+        <div v-if="recipe.image" class="recipe-image-container">
+          <img
+            :src="recipe.image"
+            :alt="recipe.name"
+            loading="lazy"
+            class="recipe-image"
+            @error="$event.target.style.display='none'"
+          />
+        </div>
         <div class="recipe-card-header">
           <h4 class="recipe-name">{{ recipe.name }}</h4>
           <span class="recipe-category">{{ categories[recipe.category] || recipe.category }}</span>
