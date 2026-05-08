@@ -1,0 +1,2769 @@
+{
+  "generatedAt": "2026-05-08T09:27:47.378Z",
+  "source": {
+    "recipesFile": "src/client/data/recipes.json",
+    "taxonomyFile": "config/recipe-taxonomy.json"
+  },
+  "totalRecipes": 156,
+  "recipes": [
+    {
+      "id": "bs001",
+      "name": "小米粥",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "bs002",
+      "name": "葱油拌面",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "cold_mix",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "bs003",
+      "name": "鸡蛋灌饼",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bs004",
+      "name": "皮蛋瘦肉粥",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bs005",
+      "name": "手抓饼",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bs006",
+      "name": "豆浆配油条",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "blend",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "bs007",
+      "name": "包子",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork"
+        ]
+      }
+    },
+    {
+      "id": "bs008",
+      "name": "白粥配咸菜",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "bs009",
+      "name": "煎饼果子",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "pan_fry",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bs010",
+      "name": "红豆粥",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "bs011",
+      "name": "馄饨",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "pork",
+          "seafood"
+        ]
+      }
+    },
+    {
+      "id": "bs012",
+      "name": "馒头配腐乳",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br001",
+      "name": "煎蛋",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "pan_fry",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "br002",
+      "name": "拌黄瓜",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "cold_mix",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br003",
+      "name": "咸鸭蛋",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "br004",
+      "name": "茶叶蛋",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "br005",
+      "name": "酱菜",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br006",
+      "name": "花生米",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br007",
+      "name": "卤豆干",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br008",
+      "name": "凉拌木耳",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "cold_mix",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br009",
+      "name": "榨菜丝",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br010",
+      "name": "蒸蛋羹",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bd001",
+      "name": "牛奶",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "milky",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bd002",
+      "name": "豆浆",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "blend",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "egg_dairy",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "bd003",
+      "name": "蜂蜜水",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd004",
+      "name": "鲜榨橙汁",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "blend",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd005",
+      "name": "酸奶",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "milky",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bd006",
+      "name": "红枣枸杞茶",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd007",
+      "name": "柠檬水",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd008",
+      "name": "燕麦奶",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "milky",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "dm001",
+      "name": "红烧肉",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork"
+        ]
+      }
+    },
+    {
+      "id": "dm002",
+      "name": "糖醋排骨",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "sour_sweet",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dm003",
+      "name": "宫保鸡丁",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry"
+        ]
+      }
+    },
+    {
+      "id": "dm004",
+      "name": "鱼香肉丝",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork",
+          "seafood"
+        ]
+      }
+    },
+    {
+      "id": "dm005",
+      "name": "可乐鸡翅",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry"
+        ]
+      }
+    },
+    {
+      "id": "dm006",
+      "name": "回锅肉",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "spicy",
+        "scene": [
+          "family",
+          "one_pot"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork"
+        ]
+      }
+    },
+    {
+      "id": "dm007",
+      "name": "红烧鸡腿",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry"
+        ]
+      }
+    },
+    {
+      "id": "dm008",
+      "name": "青椒肉丝",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "quick",
+          "family"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "pork"
+        ]
+      }
+    },
+    {
+      "id": "dm009",
+      "name": "水煮牛肉",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb"
+        ]
+      }
+    },
+    {
+      "id": "dm010",
+      "name": "黄焖鸡",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family",
+          "one_pot"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "poultry",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "dm011",
+      "name": "番茄牛腩",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "sour_sweet",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "beef_lamb",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dm012",
+      "name": "京酱肉丝",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "dv001",
+      "name": "炒青菜",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv002",
+      "name": "地三鲜",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv003",
+      "name": "蒜蓉西兰花",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv004",
+      "name": "干煸四季豆",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv005",
+      "name": "醋溜白菜",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "spicy",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv006",
+      "name": "麻婆豆腐",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "dv007",
+      "name": "炒土豆丝",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "spicy",
+        "scene": [
+          "quick",
+          "family"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv008",
+      "name": "香菇青菜",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "soy_mushroom",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv009",
+      "name": "清炒莴笋",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "light",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv010",
+      "name": "红烧茄子",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv011",
+      "name": "西红柿炒鸡蛋",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv012",
+      "name": "白灼菜心",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "ds001",
+      "name": "番茄蛋汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "sour_sweet",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "ds002",
+      "name": "紫菜蛋花汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "seafood",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "ds003",
+      "name": "排骨玉米汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "pork",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "ds004",
+      "name": "冬瓜排骨汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "pork"
+        ]
+      }
+    },
+    {
+      "id": "ds005",
+      "name": "酸辣汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "poultry",
+          "egg_dairy",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "ds006",
+      "name": "莲藕排骨汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "pork"
+        ]
+      }
+    },
+    {
+      "id": "ds007",
+      "name": "鸡汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "poultry"
+        ]
+      }
+    },
+    {
+      "id": "ds008",
+      "name": "豆腐鱼头汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "milky",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "seafood",
+          "egg_dairy",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "ds009",
+      "name": "菠菜蛋花汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "ds010",
+      "name": "萝卜牛腩汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "beef_lamb"
+        ]
+      }
+    },
+    {
+      "id": "bs013",
+      "name": "煎饼果子",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "pan_fry",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bs014",
+      "name": "鸡蛋三明治",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "sour_sweet",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bs015",
+      "name": "燕麦粥",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "milky",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bs016",
+      "name": "蒸南瓜",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "steam",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bs017",
+      "name": "烧麦",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "bs018",
+      "name": "发糕",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "bs019",
+      "name": "蛋炒饭",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bs020",
+      "name": "奶香小馒头",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "milky",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "br011",
+      "name": "凉拌海带丝",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "cold_mix",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br012",
+      "name": "泡菜",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br013",
+      "name": "拌海蜇",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "cold_mix",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br014",
+      "name": "皮蛋拌豆腐",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "cold_mix",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "egg_dairy",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "br015",
+      "name": "卤蛋",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "br016",
+      "name": "虾皮蒸蛋",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "steam",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "seafood",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "br017",
+      "name": "胡萝卜土豆饼",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "br018",
+      "name": "芝麻菠菜拌豆腐",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "cold_mix",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "bd009",
+      "name": "红糖姜茶",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd010",
+      "name": "苹果汁",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "blend",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd011",
+      "name": "菊花茶",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd012",
+      "name": "红豆汤",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd013",
+      "name": "红枣桂圆豆浆",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "blend",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "bd014",
+      "name": "紫薯燕麦奶昔",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "blend",
+        "flavor": "milky",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bd015",
+      "name": "绿豆百合饮",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd016",
+      "name": "花生核桃露",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "milky",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bd017",
+      "name": "苹果胡萝卜汁",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd018",
+      "name": "黑芝麻糊",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dm013",
+      "name": "土豆炖���肉",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dm014",
+      "name": "黑椒牛排",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "pan_fry",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb"
+        ]
+      }
+    },
+    {
+      "id": "dm015",
+      "name": "葱爆���肉",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb"
+        ]
+      }
+    },
+    {
+      "id": "dm016",
+      "name": "辣子鸡",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry"
+        ]
+      }
+    },
+    {
+      "id": "dm017",
+      "name": "红烧排骨",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork"
+        ]
+      }
+    },
+    {
+      "id": "dm018",
+      "name": "香辣虾",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "seafood"
+        ]
+      }
+    },
+    {
+      "id": "dm019",
+      "name": "清蒸鲈鱼",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "steam",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "seafood"
+        ]
+      }
+    },
+    {
+      "id": "dm020",
+      "name": "糖醋里脊",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "sour_sweet",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dm021",
+      "name": "东坡肉",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork"
+        ]
+      }
+    },
+    {
+      "id": "dm022",
+      "name": "锅包肉",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "sour_sweet",
+        "scene": [
+          "one_pot"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dm023",
+      "name": "红烧狮子头",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork"
+        ]
+      }
+    },
+    {
+      "id": "dm024",
+      "name": "白切鸡",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry"
+        ]
+      }
+    },
+    {
+      "id": "dv013",
+      "name": "手撕包菜",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "spicy",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv014",
+      "name": "凉拌茄子",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "cold_mix",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv015",
+      "name": "荷塘小炒",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv016",
+      "name": "蒜蓉菜心",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv017",
+      "name": "木耳炒鸡蛋",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "dv018",
+      "name": "丝瓜炒蛋",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "light",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "dv019",
+      "name": "苦瓜炒肉",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork"
+        ]
+      }
+    },
+    {
+      "id": "dv020",
+      "name": "四季豆炖土豆",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv021",
+      "name": "蒸金针菇",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "steam",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "seafood",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "dv022",
+      "name": "炒南瓜",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv023",
+      "name": "凉拌木耳菜",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "cold_mix",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "ds011",
+      "name": "虾滑汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "poultry",
+          "seafood",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "ds012",
+      "name": "番茄土豆汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "ds013",
+      "name": "菌菇汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "poultry",
+          "egg_dairy",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "ds014",
+      "name": "西湖牛肉羹",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "ds015",
+      "name": "玉米汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "ds016",
+      "name": "番茄豆腐菌菇汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "soy_mushroom",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "ds017",
+      "name": "冬瓜虾仁汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "seafood"
+        ]
+      }
+    },
+    {
+      "id": "ds018",
+      "name": "山药排骨汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "pork"
+        ]
+      }
+    },
+    {
+      "id": "bs021",
+      "name": "藜麦南瓜粥",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bs022",
+      "name": "玉米鸡蛋发糕",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "steam",
+        "flavor": "milky",
+        "scene": [
+          "meal_prep"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry",
+          "beef_lamb",
+          "egg_dairy",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bs023",
+      "name": "番茄鸡蛋手擀面",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry",
+          "egg_dairy",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bs024",
+      "name": "土豆丝鸡蛋卷饼",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "br019",
+      "name": "酱香鹌鹑蛋",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "meal_prep"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "br020",
+      "name": "蒜香西兰花",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br021",
+      "name": "香菇青菜包",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "steam",
+        "flavor": "savory",
+        "scene": [
+          "meal_prep"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "soy_mushroom",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "br022",
+      "name": "凉拌黄瓜木耳",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "cold_mix",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "br023",
+      "name": "紫菜蛋花羹",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "poultry",
+          "egg_dairy",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "br024",
+      "name": "玉米粒炒鸡蛋",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd019",
+      "name": "南瓜小米饮",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "milky",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb",
+          "egg_dairy",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd020",
+      "name": "香蕉牛奶昔",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "blend",
+        "flavor": "milky",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "beef_lamb",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bd021",
+      "name": "山药薏米浆",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "blend",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "bd022",
+      "name": "银耳雪梨饮",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bd023",
+      "name": "红豆燕麦乳",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "milky",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "beef_lamb",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bd024",
+      "name": "柠檬蜂蜜温水",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv024",
+      "name": "蒜蓉西葫芦",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "ds019",
+      "name": "紫菜豆腐汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "ds020",
+      "name": "金针菇鸡蛋汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "ds021",
+      "name": "白萝卜牛肉汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "beef_lamb",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "ds022",
+      "name": "丝瓜蛤蜊汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "seafood"
+        ]
+      }
+    },
+    {
+      "id": "ds023",
+      "name": "莲藕花生汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "ds024",
+      "name": "娃娃菜豆腐汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "bs025",
+      "name": "全麦鸡蛋三明治",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "sour_sweet",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy",
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "bs026",
+      "name": "香菇鸡丝粥",
+      "category": "breakfast_staple",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "poultry",
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "br025",
+      "name": "凉拌豆皮丝",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "cold_mix",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "br026",
+      "name": "芝麻海带丝",
+      "category": "breakfast_side",
+      "classification": {
+        "method": "boil",
+        "flavor": "spicy",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "unclassified"
+        ]
+      }
+    },
+    {
+      "id": "bd025",
+      "name": "木瓜酸奶昔",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "blend",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "bd026",
+      "name": "桂花酒酿饮",
+      "category": "breakfast_drink",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dm025",
+      "name": "孜然牛肉粒",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "pork",
+          "beef_lamb"
+        ]
+      }
+    },
+    {
+      "id": "dm026",
+      "name": "蒜香鸡胸肉",
+      "category": "dinner_meat",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "poultry",
+          "egg_dairy"
+        ]
+      }
+    },
+    {
+      "id": "dv025",
+      "name": "蚝油生菜",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "quick"
+        ],
+        "timeCost": "quick_15",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "dv026",
+      "name": "西芹百合炒腰果",
+      "category": "dinner_veg",
+      "classification": {
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "vegetable"
+        ]
+      }
+    },
+    {
+      "id": "ds025",
+      "name": "海带豆腐汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "light",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "normal_30",
+        "proteinType": [
+          "soy_mushroom"
+        ]
+      }
+    },
+    {
+      "id": "ds026",
+      "name": "萝卜羊肉汤",
+      "category": "dinner_soup",
+      "classification": {
+        "method": "boil",
+        "flavor": "savory",
+        "scene": [
+          "family"
+        ],
+        "timeCost": "slow_30_plus",
+        "proteinType": [
+          "beef_lamb"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "byCategory": {
+      "breakfast_staple": 26,
+      "breakfast_side": 26,
+      "breakfast_drink": 26,
+      "dinner_meat": 26,
+      "dinner_veg": 26,
+      "dinner_soup": 26
+    },
+    "bySeason": {
+      "spring": 107,
+      "summer": 107,
+      "autumn": 144,
+      "winter": 125
+    },
+    "categorySeasonMatrix": {
+      "breakfast_staple": {
+        "spring": 23,
+        "summer": 21,
+        "autumn": 26,
+        "winter": 25
+      },
+      "breakfast_side": {
+        "spring": 23,
+        "summer": 23,
+        "autumn": 24,
+        "winter": 19
+      },
+      "breakfast_drink": {
+        "spring": 10,
+        "summer": 13,
+        "autumn": 23,
+        "winter": 19
+      },
+      "dinner_meat": {
+        "spring": 22,
+        "summer": 16,
+        "autumn": 26,
+        "winter": 24
+      },
+      "dinner_veg": {
+        "spring": 15,
+        "summer": 21,
+        "autumn": 23,
+        "winter": 16
+      },
+      "dinner_soup": {
+        "spring": 14,
+        "summer": 13,
+        "autumn": 22,
+        "winter": 22
+      }
+    },
+    "facetCounts": {
+      "method": {
+        "boil": 112,
+        "cold_mix": 11,
+        "blend": 9,
+        "pan_fry": 4,
+        "stir_fry": 14,
+        "steam": 6
+      },
+      "flavor": {
+        "savory": 76,
+        "light": 45,
+        "milky": 12,
+        "sour_sweet": 7,
+        "spicy": 16
+      },
+      "scene": {
+        "family": 127,
+        "quick": 27,
+        "one_pot": 3,
+        "meal_prep": 3
+      },
+      "timeCost": {
+        "normal_30": 99,
+        "quick_15": 36,
+        "slow_30_plus": 21
+      },
+      "proteinType": {
+        "unclassified": 19,
+        "poultry": 38,
+        "egg_dairy": 47,
+        "pork": 21,
+        "soy_mushroom": 24,
+        "seafood": 11,
+        "beef_lamb": 19,
+        "vegetable": 55
+      }
+    },
+    "unclassified": {
+      "method": [],
+      "flavor": [],
+      "scene": [],
+      "timeCost": [],
+      "proteinType": [
+        "bs001",
+        "bs002",
+        "bs008",
+        "bs010",
+        "bs012",
+        "br002",
+        "br005",
+        "br006",
+        "br007",
+        "br008",
+        "br009",
+        "bs018",
+        "br011",
+        "br012",
+        "br013",
+        "br020",
+        "br022",
+        "ds023",
+        "br026"
+      ]
+    },
+    "topTags": [
+      {
+        "tag": "快手",
+        "count": 26
+      },
+      {
+        "tag": "清淡",
+        "count": 18
+      },
+      {
+        "tag": "传统",
+        "count": 9
+      },
+      {
+        "tag": "清爽",
+        "count": 9
+      },
+      {
+        "tag": "养生",
+        "count": 9
+      },
+      {
+        "tag": "猪肉",
+        "count": 9
+      },
+      {
+        "tag": "家常",
+        "count": 9
+      },
+      {
+        "tag": "炖汤",
+        "count": 8
+      },
+      {
+        "tag": "凉菜",
+        "count": 7
+      },
+      {
+        "tag": "川菜",
+        "count": 7
+      },
+      {
+        "tag": "粥类",
+        "count": 6
+      },
+      {
+        "tag": "饼类",
+        "count": 6
+      },
+      {
+        "tag": "面食",
+        "count": 6
+      },
+      {
+        "tag": "蛋类",
+        "count": 6
+      },
+      {
+        "tag": "下饭",
+        "count": 6
+      }
+    ]
+  }
+}

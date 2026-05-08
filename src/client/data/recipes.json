@@ -540,6 +540,27 @@
       "description": "五香卤蛋"
     },
     {
+      "id": "br016", "name": "虾皮蒸蛋", "category": "breakfast_side",
+      "tags": ["蒸制", "高蛋白"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "鸡蛋", "amount": "2个"}, {"name": "虾皮", "amount": "10g"}, {"name": "温水", "amount": "180ml"}],
+      "nutrition": {"calories": 170, "protein": "high", "fat": "medium"}, "cost": "low",
+      "description": "嫩滑虾皮蒸蛋，快手高蛋白"
+    },
+    {
+      "id": "br017", "name": "胡萝卜土豆饼", "category": "breakfast_side",
+      "tags": ["饼类", "家常"], "season": ["spring", "autumn", "winter"],
+      "ingredients": [{"name": "土豆", "amount": "1个"}, {"name": "胡萝卜", "amount": "半根"}, {"name": "鸡蛋", "amount": "1个"}, {"name": "面粉", "amount": "30g"}],
+      "nutrition": {"calories": 220, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "软糯胡萝卜土豆饼，适合全家早餐"
+    },
+    {
+      "id": "br018", "name": "芝麻菠菜拌豆腐", "category": "breakfast_side",
+      "tags": ["凉拌", "清爽"], "season": ["spring", "summer"],
+      "ingredients": [{"name": "菠菜", "amount": "150g"}, {"name": "北豆腐", "amount": "200g"}, {"name": "熟芝麻", "amount": "1勺"}, {"name": "生抽", "amount": "1勺"}],
+      "nutrition": {"calories": 140, "protein": "high", "fat": "low"}, "cost": "low",
+      "description": "清爽芝麻菠菜拌豆腐，低脂高纤维"
+    },
+    {
       "id": "bd009", "name": "红糖姜茶", "category": "breakfast_drink",
       "tags": ["养生", "暖身"], "season": ["autumn", "winter"],
       "ingredients": [{"name": "红糖", "amount": "2勺"}, {"name": "生姜", "amount": "3片"}],
@@ -566,6 +587,48 @@
       "ingredients": [{"name": "红豆", "amount": "50g"}, {"name": "冰糖", "amount": "适量"}],
       "nutrition": {"calories": 120, "protein": "medium", "fat": "low"}, "cost": "low",
       "description": "红豆汤，暖心暖胃"
+    },
+    {
+      "id": "bd013", "name": "红枣桂圆豆浆", "category": "breakfast_drink",
+      "tags": ["豆浆", "养生"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "黄豆", "amount": "50g"}, {"name": "红枣", "amount": "4颗"}, {"name": "桂圆干", "amount": "8颗"}],
+      "nutrition": {"calories": 120, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "红枣桂圆豆浆，秋冬暖饮"
+    },
+    {
+      "id": "bd014", "name": "紫薯燕麦奶昔", "category": "breakfast_drink",
+      "tags": ["奶昔", "饱腹"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "紫薯", "amount": "120g"}, {"name": "燕麦片", "amount": "30g"}, {"name": "牛奶", "amount": "200ml"}],
+      "nutrition": {"calories": 210, "protein": "medium", "fat": "low"}, "cost": "medium",
+      "description": "紫薯燕麦奶昔，饱腹感强"
+    },
+    {
+      "id": "bd015", "name": "绿豆百合饮", "category": "breakfast_drink",
+      "tags": ["清热", "甜饮"], "season": ["summer"],
+      "ingredients": [{"name": "绿豆", "amount": "40g"}, {"name": "干百合", "amount": "20g"}, {"name": "冰糖", "amount": "适量"}],
+      "nutrition": {"calories": 95, "protein": "low", "fat": "low"}, "cost": "low",
+      "description": "绿豆百合饮，夏季清润"
+    },
+    {
+      "id": "bd016", "name": "花生核桃露", "category": "breakfast_drink",
+      "tags": ["坚果", "浓香"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "花生", "amount": "25g"}, {"name": "核桃仁", "amount": "20g"}, {"name": "牛奶", "amount": "220ml"}],
+      "nutrition": {"calories": 190, "protein": "medium", "fat": "medium"}, "cost": "medium",
+      "description": "花生核桃露，香浓顺滑"
+    },
+    {
+      "id": "bd017", "name": "苹果胡萝卜汁", "category": "breakfast_drink",
+      "tags": ["果蔬汁", "清爽"], "season": ["summer", "autumn"],
+      "ingredients": [{"name": "苹果", "amount": "1个"}, {"name": "胡萝卜", "amount": "1根"}, {"name": "温水", "amount": "100ml"}],
+      "nutrition": {"calories": 85, "protein": "low", "fat": "low"}, "cost": "low",
+      "description": "苹果胡萝卜汁，清爽轻负担"
+    },
+    {
+      "id": "bd018", "name": "黑芝麻糊", "category": "breakfast_drink",
+      "tags": ["浓稠", "养发"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "黑芝麻", "amount": "25g"}, {"name": "糯米粉", "amount": "20g"}, {"name": "冰糖", "amount": "适量"}],
+      "nutrition": {"calories": 180, "protein": "medium", "fat": "medium"}, "cost": "low",
+      "description": "黑芝麻糊，香浓暖胃"
     },
     {
       "id": "dm013", "name": "土豆炖���肉", "category": "dinner_meat",
@@ -762,6 +825,272 @@
       "ingredients": [{"name": "玉米", "amount": "1根"}, {"name": "胡萝卜", "amount": "半根"}, {"name": "青豆", "amount": "50g"}],
       "nutrition": {"calories": 90, "protein": "medium", "fat": "low"}, "cost": "low",
       "description": "甜玉米汤"
+    },
+    {
+      "id": "ds016", "name": "番茄豆腐菌菇汤", "category": "dinner_soup",
+      "tags": ["家常", "清淡"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "番茄", "amount": "2个"}, {"name": "嫩豆腐", "amount": "200g"}, {"name": "白玉菇", "amount": "80g"}, {"name": "金针菇", "amount": "80g"}],
+      "nutrition": {"calories": 110, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "番茄豆腐菌菇汤，酸鲜开胃"
+    },
+    {
+      "id": "ds017", "name": "冬瓜虾仁汤", "category": "dinner_soup",
+      "tags": ["清爽", "低脂"], "season": ["summer"],
+      "ingredients": [{"name": "冬瓜", "amount": "300g"}, {"name": "虾仁", "amount": "120g"}, {"name": "姜丝", "amount": "适量"}],
+      "nutrition": {"calories": 95, "protein": "high", "fat": "low"}, "cost": "medium",
+      "description": "冬瓜虾仁汤，鲜甜清爽"
+    },
+    {
+      "id": "ds018", "name": "山药排骨汤", "category": "dinner_soup",
+      "tags": ["炖汤", "滋补"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "排骨", "amount": "350g"}, {"name": "山药", "amount": "250g"}, {"name": "红枣", "amount": "4颗"}, {"name": "姜片", "amount": "3片"}],
+      "nutrition": {"calories": 180, "protein": "high", "fat": "medium"}, "cost": "medium",
+      "description": "山药排骨汤，秋冬滋补"
+    },
+    {
+      "id": "bs021", "name": "藜麦南瓜粥", "category": "breakfast_staple",
+      "tags": ["养胃", "粗粮"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "藜麦", "amount": "50g"}, {"name": "南瓜", "amount": "150g"}, {"name": "大米", "amount": "50g"}],
+      "nutrition": {"calories": 210, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "藜麦南瓜粥，秋冬暖胃粗粮主食"
+    },
+    {
+      "id": "bs022", "name": "玉米鸡蛋发糕", "category": "breakfast_staple",
+      "tags": ["蒸制", "松软"], "season": ["spring", "autumn"],
+      "ingredients": [{"name": "玉米面", "amount": "120g"}, {"name": "鸡蛋", "amount": "1个"}, {"name": "牛奶", "amount": "100ml"}, {"name": "酵母", "amount": "3g"}],
+      "nutrition": {"calories": 260, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "玉米鸡蛋发糕，松软香甜适合备餐"
+    },
+    {
+      "id": "bs023", "name": "番茄鸡蛋手擀面", "category": "breakfast_staple",
+      "tags": ["面食", "家常"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "面粉", "amount": "150g"}, {"name": "番茄", "amount": "2个"}, {"name": "鸡蛋", "amount": "1个"}, {"name": "小葱", "amount": "适量"}],
+      "nutrition": {"calories": 340, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "番茄鸡蛋手擀面，酸香开胃又管饱"
+    },
+    {
+      "id": "bs024", "name": "土豆丝鸡蛋卷饼", "category": "breakfast_staple",
+      "tags": ["快手", "饼类"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "面粉", "amount": "100g"}, {"name": "土豆", "amount": "1个"}, {"name": "鸡蛋", "amount": "1个"}, {"name": "生菜", "amount": "2片"}],
+      "nutrition": {"calories": 320, "protein": "medium", "fat": "medium"}, "cost": "low",
+      "description": "土豆丝鸡蛋卷饼，快手早餐主食"
+    },
+    {
+      "id": "br019", "name": "酱香鹌鹑蛋", "category": "breakfast_side",
+      "tags": ["卤味", "便当"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "鹌鹑蛋", "amount": "12个"}, {"name": "生抽", "amount": "2勺"}, {"name": "八角", "amount": "1个"}],
+      "nutrition": {"calories": 150, "protein": "high", "fat": "medium"}, "cost": "low",
+      "description": "酱香鹌鹑蛋，适合提前批量备餐"
+    },
+    {
+      "id": "br020", "name": "蒜香西兰花", "category": "breakfast_side",
+      "tags": ["快手", "素菜"], "season": ["spring", "autumn", "winter"],
+      "ingredients": [{"name": "西兰花", "amount": "250g"}, {"name": "蒜末", "amount": "适量"}, {"name": "橄榄油", "amount": "1勺"}],
+      "nutrition": {"calories": 80, "protein": "low", "fat": "low"}, "cost": "low",
+      "description": "蒜香西兰花，脆嫩清香高纤维"
+    },
+    {
+      "id": "br021", "name": "香菇青菜包", "category": "breakfast_side",
+      "tags": ["蒸制", "面点"], "season": ["spring", "autumn", "winter"],
+      "ingredients": [{"name": "面粉", "amount": "200g"}, {"name": "香菇", "amount": "60g"}, {"name": "青菜", "amount": "150g"}, {"name": "酵母", "amount": "3g"}],
+      "nutrition": {"calories": 280, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "香菇青菜包，清爽不腻可冷冻备餐"
+    },
+    {
+      "id": "br022", "name": "凉拌黄瓜木耳", "category": "breakfast_side",
+      "tags": ["凉拌", "清脆"], "season": ["summer", "autumn"],
+      "ingredients": [{"name": "黄瓜", "amount": "1根"}, {"name": "泡发木耳", "amount": "80g"}, {"name": "蒜末", "amount": "适量"}, {"name": "香醋", "amount": "1勺"}],
+      "nutrition": {"calories": 60, "protein": "low", "fat": "low"}, "cost": "low",
+      "description": "凉拌黄瓜木耳，清爽开胃"
+    },
+    {
+      "id": "br023", "name": "紫菜蛋花羹", "category": "breakfast_side",
+      "tags": ["汤羹", "鲜味"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "紫菜", "amount": "5g"}, {"name": "鸡蛋", "amount": "1个"}, {"name": "玉米淀粉", "amount": "1勺"}],
+      "nutrition": {"calories": 90, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "紫菜蛋花羹，鲜香顺滑"
+    },
+    {
+      "id": "br024", "name": "玉米粒炒鸡蛋", "category": "breakfast_side",
+      "tags": ["快手", "蛋类"], "season": ["summer", "autumn"],
+      "ingredients": [{"name": "玉米粒", "amount": "120g"}, {"name": "鸡蛋", "amount": "2个"}, {"name": "胡萝卜", "amount": "50g"}],
+      "nutrition": {"calories": 180, "protein": "high", "fat": "medium"}, "cost": "low",
+      "description": "玉米粒炒鸡蛋，香甜快手"
+    },
+    {
+      "id": "bd019", "name": "南瓜小米饮", "category": "breakfast_drink",
+      "tags": ["暖饮", "养胃"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "南瓜", "amount": "120g"}, {"name": "小米", "amount": "30g"}, {"name": "牛奶", "amount": "150ml"}],
+      "nutrition": {"calories": 140, "protein": "low", "fat": "low"}, "cost": "low",
+      "description": "南瓜小米饮，细腻暖胃"
+    },
+    {
+      "id": "bd020", "name": "香蕉牛奶昔", "category": "breakfast_drink",
+      "tags": ["奶昔", "快手"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "香蕉", "amount": "1根"}, {"name": "牛奶", "amount": "220ml"}, {"name": "燕麦片", "amount": "10g"}],
+      "nutrition": {"calories": 190, "protein": "medium", "fat": "low"}, "cost": "medium",
+      "description": "香蕉牛奶昔，丝滑饱腹"
+    },
+    {
+      "id": "bd021", "name": "山药薏米浆", "category": "breakfast_drink",
+      "tags": ["养生", "豆浆"], "season": ["summer", "autumn"],
+      "ingredients": [{"name": "山药", "amount": "100g"}, {"name": "薏米", "amount": "30g"}, {"name": "黄豆", "amount": "30g"}],
+      "nutrition": {"calories": 130, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "山药薏米浆，夏秋健脾清润"
+    },
+    {
+      "id": "bd022", "name": "银耳雪梨饮", "category": "breakfast_drink",
+      "tags": ["润燥", "甜饮"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "银耳", "amount": "15g"}, {"name": "雪梨", "amount": "1个"}, {"name": "枸杞", "amount": "10g"}, {"name": "冰糖", "amount": "适量"}],
+      "nutrition": {"calories": 95, "protein": "low", "fat": "low"}, "cost": "low",
+      "description": "银耳雪梨饮，润燥顺喉"
+    },
+    {
+      "id": "bd023", "name": "红豆燕麦乳", "category": "breakfast_drink",
+      "tags": ["豆饮", "饱腹"], "season": ["spring", "autumn", "winter"],
+      "ingredients": [{"name": "红豆", "amount": "40g"}, {"name": "燕麦", "amount": "20g"}, {"name": "牛奶", "amount": "180ml"}],
+      "nutrition": {"calories": 160, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "红豆燕麦乳，香浓有饱腹感"
+    },
+    {
+      "id": "bd024", "name": "柠檬蜂蜜温水", "category": "breakfast_drink",
+      "tags": ["清爽", "轻负担"], "season": ["spring", "summer"],
+      "ingredients": [{"name": "柠檬", "amount": "半个"}, {"name": "蜂蜜", "amount": "1勺"}, {"name": "温水", "amount": "250ml"}],
+      "nutrition": {"calories": 45, "protein": "low", "fat": "low"}, "cost": "low",
+      "description": "柠檬蜂蜜温水，清新轻负担"
+    },
+    {
+      "id": "dv024", "name": "蒜蓉西葫芦", "category": "dinner_veg",
+      "tags": ["快手", "清淡"], "season": ["summer", "autumn"],
+      "ingredients": [{"name": "西葫芦", "amount": "300g"}, {"name": "蒜末", "amount": "适量"}, {"name": "盐", "amount": "适量"}],
+      "nutrition": {"calories": 70, "protein": "low", "fat": "low"}, "cost": "low",
+      "description": "蒜蓉西葫芦，清脆爽口"
+    },
+    {
+      "id": "ds019", "name": "紫菜豆腐汤", "category": "dinner_soup",
+      "tags": ["快手", "清淡"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "紫菜", "amount": "5g"}, {"name": "嫩豆腐", "amount": "200g"}, {"name": "香葱", "amount": "适量"}],
+      "nutrition": {"calories": 95, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "紫菜豆腐汤，轻盈鲜香"
+    },
+    {
+      "id": "ds020", "name": "金针菇鸡蛋汤", "category": "dinner_soup",
+      "tags": ["蛋花", "鲜味"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "金针菇", "amount": "150g"}, {"name": "鸡蛋", "amount": "1个"}, {"name": "枸杞", "amount": "10g"}],
+      "nutrition": {"calories": 100, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "金针菇鸡蛋汤，鲜味温和"
+    },
+    {
+      "id": "ds021", "name": "白萝卜牛肉汤", "category": "dinner_soup",
+      "tags": ["暖胃", "炖汤"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "牛腩", "amount": "250g"}, {"name": "白萝卜", "amount": "300g"}, {"name": "姜片", "amount": "3片"}],
+      "nutrition": {"calories": 170, "protein": "high", "fat": "medium"}, "cost": "medium",
+      "description": "白萝卜牛肉汤，冬季暖身高蛋白"
+    },
+    {
+      "id": "ds022", "name": "丝瓜蛤蜊汤", "category": "dinner_soup",
+      "tags": ["清鲜", "海鲜"], "season": ["summer"],
+      "ingredients": [{"name": "丝瓜", "amount": "1根"}, {"name": "蛤蜊", "amount": "250g"}, {"name": "姜丝", "amount": "适量"}],
+      "nutrition": {"calories": 85, "protein": "medium", "fat": "low"}, "cost": "medium",
+      "description": "丝瓜蛤蜊汤，夏季清鲜"
+    },
+    {
+      "id": "ds023", "name": "莲藕花生汤", "category": "dinner_soup",
+      "tags": ["养生", "家常"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "莲藕", "amount": "300g"}, {"name": "花生", "amount": "60g"}, {"name": "胡萝卜", "amount": "半根"}],
+      "nutrition": {"calories": 130, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "莲藕花生汤，秋冬养生"
+    },
+    {
+      "id": "ds024", "name": "娃娃菜豆腐汤", "category": "dinner_soup",
+      "tags": ["清淡", "家常"], "season": ["spring", "winter"],
+      "ingredients": [{"name": "娃娃菜", "amount": "200g"}, {"name": "北豆腐", "amount": "150g"}, {"name": "枸杞", "amount": "10g"}],
+      "nutrition": {"calories": 90, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "娃娃菜豆腐汤，清淡顺口"
+    },
+    {
+      "id": "bs025", "name": "全麦鸡蛋三明治", "category": "breakfast_staple",
+      "tags": ["快手", "面包"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "全麦吐司", "amount": "2片"}, {"name": "鸡蛋", "amount": "1个"}, {"name": "生菜", "amount": "2片"}, {"name": "番茄", "amount": "2片"}],
+      "nutrition": {"calories": 320, "protein": "medium", "fat": "medium"}, "cost": "medium",
+      "description": "全麦鸡蛋三明治，快手高饱腹主食"
+    },
+    {
+      "id": "bs026", "name": "香菇鸡丝粥", "category": "breakfast_staple",
+      "tags": ["粥类", "暖胃"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "大米", "amount": "80g"}, {"name": "鸡胸肉", "amount": "80g"}, {"name": "香菇", "amount": "4朵"}, {"name": "姜丝", "amount": "适量"}],
+      "nutrition": {"calories": 240, "protein": "high", "fat": "low"}, "cost": "low",
+      "description": "香菇鸡丝粥，秋冬暖胃又鲜香"
+    },
+    {
+      "id": "br025", "name": "凉拌豆皮丝", "category": "breakfast_side",
+      "tags": ["凉拌", "清爽"], "season": ["spring", "summer", "autumn"],
+      "ingredients": [{"name": "豆皮", "amount": "120g"}, {"name": "黄瓜", "amount": "半根"}, {"name": "胡萝卜", "amount": "半根"}, {"name": "香醋", "amount": "1勺"}],
+      "nutrition": {"calories": 130, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "凉拌豆皮丝，清爽开胃"
+    },
+    {
+      "id": "br026", "name": "芝麻海带丝", "category": "breakfast_side",
+      "tags": ["小菜", "低脂"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "海带丝", "amount": "150g"}, {"name": "熟芝麻", "amount": "1勺"}, {"name": "蒜末", "amount": "适量"}],
+      "nutrition": {"calories": 70, "protein": "low", "fat": "low"}, "cost": "low",
+      "description": "芝麻海带丝，低脂高纤维小菜"
+    },
+    {
+      "id": "bd025", "name": "木瓜酸奶昔", "category": "breakfast_drink",
+      "tags": ["奶昔", "清甜"], "season": ["summer", "autumn"],
+      "ingredients": [{"name": "木瓜", "amount": "150g"}, {"name": "酸奶", "amount": "180ml"}, {"name": "蜂蜜", "amount": "少许"}],
+      "nutrition": {"calories": 140, "protein": "medium", "fat": "low"}, "cost": "medium",
+      "description": "木瓜酸奶昔，清甜顺滑"
+    },
+    {
+      "id": "bd026", "name": "桂花酒酿饮", "category": "breakfast_drink",
+      "tags": ["暖饮", "香甜"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "酒酿", "amount": "120g"}, {"name": "桂花", "amount": "少许"}, {"name": "温水", "amount": "200ml"}],
+      "nutrition": {"calories": 120, "protein": "low", "fat": "low"}, "cost": "low",
+      "description": "桂花酒酿饮，暖胃香甜"
+    },
+    {
+      "id": "dm025", "name": "孜然牛肉粒", "category": "dinner_meat",
+      "tags": ["下饭", "牛肉"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "牛里脊", "amount": "250g"}, {"name": "洋葱", "amount": "半个"}, {"name": "孜然粉", "amount": "1勺"}, {"name": "彩椒", "amount": "1个"}],
+      "nutrition": {"calories": 300, "protein": "high", "fat": "medium"}, "cost": "high",
+      "description": "孜然牛肉粒，香气浓郁很下饭"
+    },
+    {
+      "id": "dm026", "name": "蒜香鸡胸肉", "category": "dinner_meat",
+      "tags": ["快手", "低脂"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "鸡胸肉", "amount": "250g"}, {"name": "蒜末", "amount": "适量"}, {"name": "黑胡椒", "amount": "少许"}, {"name": "橄榄油", "amount": "1勺"}],
+      "nutrition": {"calories": 220, "protein": "high", "fat": "low"}, "cost": "medium",
+      "description": "蒜香鸡胸肉，高蛋白低脂晚餐"
+    },
+    {
+      "id": "dv025", "name": "蚝油生菜", "category": "dinner_veg",
+      "tags": ["快手", "清淡"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "生菜", "amount": "300g"}, {"name": "蚝油", "amount": "1勺"}, {"name": "蒜末", "amount": "适量"}],
+      "nutrition": {"calories": 65, "protein": "low", "fat": "low"}, "cost": "low",
+      "description": "蚝油生菜，简单快手又清爽"
+    },
+    {
+      "id": "dv026", "name": "西芹百合炒腰果", "category": "dinner_veg",
+      "tags": ["清脆", "家常"], "season": ["spring", "autumn"],
+      "ingredients": [{"name": "西芹", "amount": "200g"}, {"name": "百合", "amount": "80g"}, {"name": "腰果", "amount": "40g"}],
+      "nutrition": {"calories": 150, "protein": "medium", "fat": "medium"}, "cost": "medium",
+      "description": "西芹百合炒腰果，清脆清香"
+    },
+    {
+      "id": "ds025", "name": "海带豆腐汤", "category": "dinner_soup",
+      "tags": ["家常", "清淡"], "season": ["spring", "summer", "autumn", "winter"],
+      "ingredients": [{"name": "海带结", "amount": "120g"}, {"name": "北豆腐", "amount": "200g"}, {"name": "姜丝", "amount": "适量"}],
+      "nutrition": {"calories": 90, "protein": "medium", "fat": "low"}, "cost": "low",
+      "description": "海带豆腐汤，清淡鲜美"
+    },
+    {
+      "id": "ds026", "name": "萝卜羊肉汤", "category": "dinner_soup",
+      "tags": ["暖汤", "滋补"], "season": ["autumn", "winter"],
+      "ingredients": [{"name": "羊肉", "amount": "250g"}, {"name": "白萝卜", "amount": "300g"}, {"name": "姜片", "amount": "3片"}],
+      "nutrition": {"calories": 210, "protein": "high", "fat": "medium"}, "cost": "high",
+      "description": "萝卜羊肉汤，冬季暖身滋补"
     }
   ],
   "categories": {

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "recipes:audit": "node scripts/recipe-audit.js"
   },
   "dependencies": {
     "vue": "^3.5.0",

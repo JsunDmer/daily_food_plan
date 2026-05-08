@@ -13,7 +13,40 @@
         :class="['tab-btn', { active: activeCategory === key }]"
         @click="activeCategory = key"
       >
-        {{ label }}
+        <span>{{ label }}</span>
+        <span class="tab-count">{{ categoryCounts[key] || 0 }}</span>
+      </button>
+    </div>
+
+    <div class="filter-bar">
+      <div class="search-box">
+        <input
+          v-model.trim="searchKeyword"
+          type="search"
+          placeholder="搜索菜名/描述/食材/标签"
+        />
+      </div>
+
+      <select v-model="selectedSeason" class="filter-select" aria-label="按季节筛选">
+        <option value="">全部季节</option>
+        <option value="spring">春季</option>
+        <option value="summer">夏季</option>
+        <option value="autumn">秋季</option>
+        <option value="winter">冬季</option>
+      </select>
+
+      <select v-model="selectedCost" class="filter-select" aria-label="按费用筛选">
+        <option value="">全部费用</option>
+        <option value="low">低</option>
+        <option value="medium">中</option>
+        <option value="high">高</option>
+      </select>
+    </div>
+
+    <div v-if="!loading" class="results-meta">
+      <span>当前显示 {{ filteredRecipes.length }} 道菜谱</span>
+      <button v-if="hasActiveFilters" class="clear-filter-btn" @click="clearFilters">
+        清除筛选
       </button>
     </div>
 
@@ -126,14 +159,72 @@ const newRecipe = ref({
   cost: 'medium'
 })
 const ingredientsText = ref('')
+const searchKeyword = ref('')
+const selectedSeason = ref('')
+const selectedCost = ref('')
+
+const categoryCounts = computed(() => {
+  return recipes.value.reduce((acc, recipe) => {
+    acc[recipe.category] = (acc[recipe.category] || 0) + 1
+    return acc
+  }, {})
+})
 
 const filteredRecipes = computed(() => {
-  return recipes.value.filter(r => r.category === activeCategory.value)
+  const keyword = searchKeyword.value.trim().toLowerCase()
+  const list = recipes.value
+    .filter(recipe => recipe.category === activeCategory.value)
+    .filter(recipe => {
+      if (selectedSeason.value && !recipe.season?.includes(selectedSeason.value)) {
+        return false
+      }
+      if (selectedCost.value && recipe.cost !== selectedCost.value) {
+        return false
+      }
+      if (!keyword) return true
+
+      const haystack = [
+        recipe.name,
+        recipe.description,
+        ...(recipe.tags || []),
+        ...(recipe.ingredients || []).map(ing => ing.name)
+      ]
+        .filter(Boolean)
+        .join(' ')
+        .toLowerCase()
+
+      return haystack.includes(keyword)
+    })
+
+  return list.sort((a, b) => {
+    if (a.isFavorite !== b.isFavorite) return a.isFavorite ? -1 : 1
+    if (a.isDisliked !== b.isDisliked) return a.isDisliked ? 1 : -1
+    return getRecipeOrderScore(b) - getRecipeOrderScore(a)
+  })
+})
+
+const hasActiveFilters = computed(() => {
+  return Boolean(searchKeyword.value.trim() || selectedSeason.value || selectedCost.value)
 })
 
 function costLabel(cost) {
   const map = { low: '省钱', medium: '适中', high: '小贵' }
   return map[cost] || cost
+}
+
+function getRecipeOrderScore(recipe) {
+  const rawId = String(recipe.id || '')
+  const idNumber = Number((rawId.match(/(\d+)$/) || [0, 0])[1])
+
+  // 自定义菜谱通常使用时间戳后缀，给它更高基准分，默认靠前展示。
+  if (recipe.isCustom) return 1000000 + idNumber
+  return idNumber
+}
+
+function clearFilters() {
+  searchKeyword.value = ''
+  selectedSeason.value = ''
+  selectedCost.value = ''
 }
 
 async function fetchRecipes() {
@@ -255,6 +346,12 @@ onMounted(fetchRecipes)
   min-height: 44px;
 }
 
+.tab-count {
+  margin-left: 6px;
+  font-size: 0.72rem;
+  opacity: 0.8;
+}
+
 .tab-btn.active {
   background: var(--primary);
   color: white;
@@ -266,6 +363,54 @@ onMounted(fetchRecipes)
   border-color: var(--primary-light);
   color: var(--primary);
   background: var(--primary-subtle);
+}
+
+.filter-bar {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.search-box input,
+.filter-select {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--card-bg);
+  padding: 0 12px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.search-box input::placeholder {
+  color: var(--text-muted);
+}
+
+.results-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+}
+
+.clear-filter-btn {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--card-bg);
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  min-height: 32px;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.clear-filter-btn:hover {
+  border-color: var(--primary-light);
+  color: var(--primary);
 }
 
 .recipe-grid {
@@ -467,5 +612,17 @@ onMounted(fetchRecipes)
   text-align: center;
   padding: 40px;
   color: var(--text-secondary);
+}
+
+@media (max-width: 767px) {
+  .filter-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .results-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+  }
 }
 </style>

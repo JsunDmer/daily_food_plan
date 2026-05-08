@@ -1,0 +1,167 @@
+{
+  "generatedAt": "2026-05-08T09:27:47.379Z",
+  "source": {
+    "recipesFile": "src/client/data/recipes.json",
+    "taxonomyFile": "config/recipe-taxonomy.json"
+  },
+  "targets": {
+    "breakfast_staple": {
+      "label": "早餐-主食",
+      "minCount": 20,
+      "targetCount": 24
+    },
+    "breakfast_side": {
+      "label": "早餐-副食",
+      "minCount": 18,
+      "targetCount": 24
+    },
+    "breakfast_drink": {
+      "label": "早餐-饮品",
+      "minCount": 18,
+      "targetCount": 24
+    },
+    "dinner_meat": {
+      "label": "晚餐-荤菜",
+      "minCount": 22,
+      "targetCount": 24
+    },
+    "dinner_veg": {
+      "label": "晚餐-素菜",
+      "minCount": 22,
+      "targetCount": 24
+    },
+    "dinner_soup": {
+      "label": "晚餐-汤",
+      "minCount": 18,
+      "targetCount": 24
+    }
+  },
+  "currentByCategory": {
+    "breakfast_staple": 26,
+    "breakfast_side": 26,
+    "breakfast_drink": 26,
+    "dinner_meat": 26,
+    "dinner_veg": 26,
+    "dinner_soup": 26
+  },
+  "gapSummary": [
+    {
+      "category": "breakfast_staple",
+      "label": "早餐-主食",
+      "currentCount": 26,
+      "minCount": 20,
+      "targetCount": 24,
+      "minGap": 0,
+      "targetGap": 0
+    },
+    {
+      "category": "breakfast_side",
+      "label": "早餐-副食",
+      "currentCount": 26,
+      "minCount": 18,
+      "targetCount": 24,
+      "minGap": 0,
+      "targetGap": 0
+    },
+    {
+      "category": "breakfast_drink",
+      "label": "早餐-饮品",
+      "currentCount": 26,
+      "minCount": 18,
+      "targetCount": 24,
+      "minGap": 0,
+      "targetGap": 0
+    },
+    {
+      "category": "dinner_meat",
+      "label": "晚餐-荤菜",
+      "currentCount": 26,
+      "minCount": 22,
+      "targetCount": 24,
+      "minGap": 0,
+      "targetGap": 0
+    },
+    {
+      "category": "dinner_veg",
+      "label": "晚餐-素菜",
+      "currentCount": 26,
+      "minCount": 22,
+      "targetCount": 24,
+      "minGap": 0,
+      "targetGap": 0
+    },
+    {
+      "category": "dinner_soup",
+      "label": "晚餐-汤",
+      "currentCount": 26,
+      "minCount": 18,
+      "targetCount": 24,
+      "minGap": 0,
+      "targetGap": 0
+    }
+  ],
+  "batches": [
+    {
+      "id": "batch-1-minimum",
+      "title": "先补齐最低库存",
+      "totalNewRecipes": 0,
+      "items": []
+    },
+    {
+      "id": "batch-2-target",
+      "title": "再冲刺目标库存",
+      "totalNewRecipes": 0,
+      "items": []
+    }
+  ],
+  "poolCoverage": [
+    {
+      "category": "breakfast_staple",
+      "label": "早餐-主食",
+      "poolAvailable": 6,
+      "neededForMin": 0,
+      "neededForTarget": 0,
+      "shortForTarget": 0
+    },
+    {
+      "category": "breakfast_side",
+      "label": "早餐-副食",
+      "poolAvailable": 10,
+      "neededForMin": 0,
+      "neededForTarget": 0,
+      "shortForTarget": 0
+    },
+    {
+      "category": "breakfast_drink",
+      "label": "早餐-饮品",
+      "poolAvailable": 12,
+      "neededForMin": 0,
+      "neededForTarget": 0,
+      "shortForTarget": 0
+    },
+    {
+      "category": "dinner_meat",
+      "label": "晚餐-荤菜",
+      "poolAvailable": 3,
+      "neededForMin": 0,
+      "neededForTarget": 0,
+      "shortForTarget": 0
+    },
+    {
+      "category": "dinner_veg",
+      "label": "晚餐-素菜",
+      "poolAvailable": 4,
+      "neededForMin": 0,
+      "neededForTarget": 0,
+      "shortForTarget": 0
+    },
+    {
+      "category": "dinner_soup",
+      "label": "晚餐-汤",
+      "poolAvailable": 10,
+      "neededForMin": 0,
+      "neededForTarget": 0,
+      "shortForTarget": 0
+    }
+  ]
+}

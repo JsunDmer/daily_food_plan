@@ -1,0 +1,578 @@
+{
+  "version": "2026-05-08",
+  "categoryTargets": {
+    "breakfast_staple": { "label": "早餐-主食", "minCount": 20, "targetCount": 24 },
+    "breakfast_side": { "label": "早餐-副食", "minCount": 18, "targetCount": 24 },
+    "breakfast_drink": { "label": "早餐-饮品", "minCount": 18, "targetCount": 24 },
+    "dinner_meat": { "label": "晚餐-荤菜", "minCount": 22, "targetCount": 24 },
+    "dinner_veg": { "label": "晚餐-素菜", "minCount": 22, "targetCount": 24 },
+    "dinner_soup": { "label": "晚餐-汤", "minCount": 18, "targetCount": 24 }
+  },
+  "facets": {
+    "method": {
+      "label": "做法",
+      "exclusive": true,
+      "values": [
+        { "id": "boil", "label": "煮/炖", "keywords": ["煮", "炖", "粥", "汤", "羹", "焖"] },
+        { "id": "stir_fry", "label": "炒", "keywords": ["炒", "爆", "宫保"] },
+        { "id": "steam", "label": "蒸", "keywords": ["蒸"] },
+        { "id": "pan_fry", "label": "煎", "keywords": ["煎", "锅贴"] },
+        { "id": "cold_mix", "label": "凉拌", "keywords": ["凉拌", "沙拉"] },
+        { "id": "bake", "label": "烤", "keywords": ["烤", "焗"] },
+        { "id": "blend", "label": "搅打", "keywords": ["奶昔", "豆浆", "果汁", "smoothie"] }
+      ]
+    },
+    "flavor": {
+      "label": "口味",
+      "exclusive": true,
+      "values": [
+        { "id": "light", "label": "清淡", "keywords": ["清淡", "清甜", "鲜", "养生"] },
+        { "id": "spicy", "label": "香辣", "keywords": ["辣", "麻辣", "香辣", "川菜"] },
+        { "id": "savory", "label": "咸鲜", "keywords": ["下饭", "咸鲜", "经典", "家常"] },
+        { "id": "sour_sweet", "label": "酸甜", "keywords": ["酸甜", "糖醋", "番茄"] },
+        { "id": "milky", "label": "奶香", "keywords": ["牛奶", "奶香", "奶"] }
+      ]
+    },
+    "scene": {
+      "label": "场景",
+      "exclusive": false,
+      "values": [
+        { "id": "quick", "label": "快手", "keywords": ["快手", "10分钟", "15分钟", "省时"] },
+        { "id": "family", "label": "家庭餐", "keywords": ["家常", "家庭", "下饭", "传统"] },
+        { "id": "one_pot", "label": "一锅出", "keywords": ["一锅", "焖", "锅"] },
+        { "id": "meal_prep", "label": "备餐", "keywords": ["备餐", "便当", "隔夜"] }
+      ]
+    },
+    "timeCost": {
+      "label": "耗时",
+      "exclusive": true,
+      "values": [
+        { "id": "quick_15", "label": "15分钟内", "keywords": ["快手", "速成", "即食", "凉拌"] },
+        { "id": "normal_30", "label": "15-30分钟", "keywords": ["家常", "小炒", "煎"] },
+        { "id": "slow_30_plus", "label": "30分钟以上", "keywords": ["炖", "煲", "焖", "汤"] }
+      ]
+    },
+    "proteinType": {
+      "label": "蛋白来源",
+      "exclusive": false,
+      "values": [
+        { "id": "pork", "label": "猪肉", "keywords": ["猪", "排骨", "里脊", "五花肉"] },
+        { "id": "poultry", "label": "禽肉", "keywords": ["鸡", "鸭"] },
+        { "id": "beef_lamb", "label": "牛羊", "keywords": ["牛", "羊"] },
+        { "id": "seafood", "label": "海鲜", "keywords": ["虾", "鱼", "蛤蜊", "带鱼", "鲈鱼"] },
+        { "id": "egg_dairy", "label": "蛋奶", "keywords": ["蛋", "牛奶", "奶"] },
+        { "id": "soy_mushroom", "label": "豆菌", "keywords": ["豆腐", "豆浆", "豆皮", "香菇", "菌"] },
+        { "id": "vegetable", "label": "纯蔬果", "keywords": ["蔬菜", "青菜", "玉米", "南瓜", "番茄"] }
+      ]
+    }
+  },
+  "expansionPool": {
+    "breakfast_staple": [
+      {
+        "name": "藜麦南瓜粥",
+        "season": ["autumn", "winter"],
+        "tags": ["养胃", "粗粮"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["family"],
+        "timeCost": "slow_30_plus",
+        "proteinType": ["vegetable"],
+        "notes": "补充秋冬暖胃主食"
+      },
+      {
+        "name": "玉米鸡蛋发糕",
+        "season": ["spring", "autumn"],
+        "tags": ["蒸制", "松软"],
+        "method": "steam",
+        "flavor": "light",
+        "scene": ["family", "meal_prep"],
+        "timeCost": "slow_30_plus",
+        "proteinType": ["egg_dairy"],
+        "notes": "可提前备餐，早餐复热即食"
+      },
+      {
+        "name": "番茄鸡蛋手擀面",
+        "season": ["spring", "summer", "autumn", "winter"],
+        "tags": ["面食", "家常"],
+        "method": "boil",
+        "flavor": "sour_sweet",
+        "scene": ["family"],
+        "timeCost": "normal_30",
+        "proteinType": ["egg_dairy"],
+        "notes": "覆盖全年主食选择"
+      },
+      {
+        "name": "土豆丝鸡蛋卷饼",
+        "season": ["spring", "summer", "autumn", "winter"],
+        "tags": ["快手", "饼类"],
+        "method": "pan_fry",
+        "flavor": "savory",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["egg_dairy"],
+        "notes": "补充快手型主食"
+      },
+      {
+        "name": "红薯燕麦粥",
+        "season": ["autumn", "winter"],
+        "tags": ["粗粮", "低脂"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["family"],
+        "timeCost": "slow_30_plus",
+        "proteinType": ["vegetable"],
+        "notes": "提升低脂和粗粮占比"
+      },
+      {
+        "name": "鸡丝青菜汤年糕",
+        "season": ["winter", "spring"],
+        "tags": ["暖胃", "一锅"],
+        "method": "boil",
+        "flavor": "savory",
+        "scene": ["one_pot"],
+        "timeCost": "normal_30",
+        "proteinType": ["poultry"],
+        "notes": "提升冬春季主食选择"
+      }
+    ],
+    "breakfast_side": [
+      {
+        "name": "虾皮蒸蛋",
+        "season": ["spring", "summer", "autumn", "winter"],
+        "tags": ["蒸制", "高蛋白"],
+        "method": "steam",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["seafood", "egg_dairy"],
+        "notes": "提升早餐蛋白密度"
+      },
+      {
+        "name": "胡萝卜土豆饼",
+        "season": ["spring", "autumn", "winter"],
+        "tags": ["饼类", "家常"],
+        "method": "pan_fry",
+        "flavor": "savory",
+        "scene": ["family"],
+        "timeCost": "normal_30",
+        "proteinType": ["vegetable"],
+        "notes": "儿童接受度高"
+      },
+      {
+        "name": "芝麻菠菜拌豆腐",
+        "season": ["spring", "summer"],
+        "tags": ["凉拌", "清爽"],
+        "method": "cold_mix",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["soy_mushroom"],
+        "notes": "补充夏季副食"
+      },
+      {
+        "name": "酱香鹌鹑蛋",
+        "season": ["spring", "summer", "autumn", "winter"],
+        "tags": ["卤味", "便当"],
+        "method": "boil",
+        "flavor": "savory",
+        "scene": ["meal_prep"],
+        "timeCost": "normal_30",
+        "proteinType": ["egg_dairy"],
+        "notes": "适合提前批量准备"
+      },
+      {
+        "name": "蒜香西兰花",
+        "season": ["spring", "autumn", "winter"],
+        "tags": ["快手", "素菜"],
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": ["quick", "family"],
+        "timeCost": "quick_15",
+        "proteinType": ["vegetable"],
+        "notes": "高纤维补充"
+      },
+      {
+        "name": "香菇青菜包",
+        "season": ["spring", "autumn", "winter"],
+        "tags": ["蒸制", "面点"],
+        "method": "steam",
+        "flavor": "savory",
+        "scene": ["family", "meal_prep"],
+        "timeCost": "slow_30_plus",
+        "proteinType": ["soy_mushroom"],
+        "notes": "可一次做多份冷冻"
+      },
+      {
+        "name": "凉拌黄瓜木耳",
+        "season": ["summer", "autumn"],
+        "tags": ["凉拌", "清脆"],
+        "method": "cold_mix",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["vegetable"],
+        "notes": "夏季高频副食"
+      },
+      {
+        "name": "紫菜蛋花羹",
+        "season": ["spring", "summer", "autumn", "winter"],
+        "tags": ["汤羹", "鲜味"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["egg_dairy"],
+        "notes": "早餐副食与饮品之间的过渡品类"
+      },
+      {
+        "name": "玉米粒炒鸡蛋",
+        "season": ["summer", "autumn"],
+        "tags": ["快手", "蛋类"],
+        "method": "stir_fry",
+        "flavor": "sour_sweet",
+        "scene": ["quick", "family"],
+        "timeCost": "quick_15",
+        "proteinType": ["egg_dairy"],
+        "notes": "提高夏秋可选副食量"
+      },
+      {
+        "name": "豆皮卷生菜",
+        "season": ["spring", "summer"],
+        "tags": ["清爽", "低脂"],
+        "method": "cold_mix",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["soy_mushroom"],
+        "notes": "轻食型早餐副食"
+      }
+    ],
+    "breakfast_drink": [
+      {
+        "name": "红枣桂圆豆浆",
+        "season": ["autumn", "winter"],
+        "tags": ["豆浆", "养生"],
+        "method": "blend",
+        "flavor": "light",
+        "scene": ["family"],
+        "timeCost": "quick_15",
+        "proteinType": ["soy_mushroom"],
+        "notes": "补充秋冬暖饮"
+      },
+      {
+        "name": "紫薯燕麦奶昔",
+        "season": ["autumn", "winter"],
+        "tags": ["奶昔", "饱腹"],
+        "method": "blend",
+        "flavor": "milky",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["egg_dairy"],
+        "notes": "高饱腹饮品"
+      },
+      {
+        "name": "绿豆百合饮",
+        "season": ["summer"],
+        "tags": ["清热", "甜饮"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["family"],
+        "timeCost": "slow_30_plus",
+        "proteinType": ["vegetable"],
+        "notes": "补齐夏季饮品"
+      },
+      {
+        "name": "花生核桃露",
+        "season": ["autumn", "winter"],
+        "tags": ["坚果", "浓香"],
+        "method": "blend",
+        "flavor": "milky",
+        "scene": ["family"],
+        "timeCost": "normal_30",
+        "proteinType": ["vegetable"],
+        "notes": "提升冬季能量型饮品"
+      },
+      {
+        "name": "苹果胡萝卜汁",
+        "season": ["summer", "autumn"],
+        "tags": ["果蔬汁", "清爽"],
+        "method": "blend",
+        "flavor": "sour_sweet",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["vegetable"],
+        "notes": "补充夏秋果蔬饮"
+      },
+      {
+        "name": "黑芝麻糊",
+        "season": ["autumn", "winter"],
+        "tags": ["浓稠", "养发"],
+        "method": "boil",
+        "flavor": "milky",
+        "scene": ["family"],
+        "timeCost": "normal_30",
+        "proteinType": ["vegetable"],
+        "notes": "提升秋冬覆盖"
+      },
+      {
+        "name": "南瓜小米饮",
+        "season": ["autumn", "winter"],
+        "tags": ["暖饮", "养胃"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["family"],
+        "timeCost": "normal_30",
+        "proteinType": ["vegetable"],
+        "notes": "与主食粥类协同"
+      },
+      {
+        "name": "香蕉牛奶昔",
+        "season": ["spring", "summer", "autumn", "winter"],
+        "tags": ["奶昔", "快手"],
+        "method": "blend",
+        "flavor": "milky",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["egg_dairy"],
+        "notes": "全年通用快手饮品"
+      },
+      {
+        "name": "山药薏米浆",
+        "season": ["summer", "autumn"],
+        "tags": ["养生", "豆浆"],
+        "method": "blend",
+        "flavor": "light",
+        "scene": ["family"],
+        "timeCost": "normal_30",
+        "proteinType": ["vegetable"],
+        "notes": "夏秋健脾饮品"
+      },
+      {
+        "name": "银耳雪梨饮",
+        "season": ["autumn", "winter"],
+        "tags": ["润燥", "甜饮"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["family"],
+        "timeCost": "slow_30_plus",
+        "proteinType": ["vegetable"],
+        "notes": "秋冬润燥型饮品"
+      },
+      {
+        "name": "红豆燕麦乳",
+        "season": ["spring", "autumn", "winter"],
+        "tags": ["豆饮", "饱腹"],
+        "method": "boil",
+        "flavor": "milky",
+        "scene": ["family", "meal_prep"],
+        "timeCost": "normal_30",
+        "proteinType": ["soy_mushroom"],
+        "notes": "适合做批量基础饮品"
+      },
+      {
+        "name": "柠檬蜂蜜温水",
+        "season": ["spring", "summer"],
+        "tags": ["清爽", "轻负担"],
+        "method": "blend",
+        "flavor": "sour_sweet",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["vegetable"],
+        "notes": "补充低热量快速饮品"
+      }
+    ],
+    "dinner_meat": [
+      {
+        "name": "照烧鸡腿肉",
+        "season": ["spring", "summer", "autumn", "winter"],
+        "tags": ["家常", "下饭"],
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": ["family"],
+        "timeCost": "normal_30",
+        "proteinType": ["poultry"],
+        "notes": "可替换高脂猪肉菜"
+      },
+      {
+        "name": "番茄炖牛腩",
+        "season": ["autumn", "winter"],
+        "tags": ["炖菜", "浓郁"],
+        "method": "boil",
+        "flavor": "sour_sweet",
+        "scene": ["family", "one_pot"],
+        "timeCost": "slow_30_plus",
+        "proteinType": ["beef_lamb"],
+        "notes": "提升冬季牛肉选择"
+      },
+      {
+        "name": "清蒸鲈鱼",
+        "season": ["spring", "summer", "autumn", "winter"],
+        "tags": ["清蒸", "高蛋白"],
+        "method": "steam",
+        "flavor": "light",
+        "scene": ["family"],
+        "timeCost": "normal_30",
+        "proteinType": ["seafood"],
+        "notes": "提升清淡晚餐荤菜占比"
+      }
+    ],
+    "dinner_veg": [
+      {
+        "name": "蒜蓉西葫芦",
+        "season": ["summer", "autumn"],
+        "tags": ["快手", "清淡"],
+        "method": "stir_fry",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["vegetable"],
+        "notes": "补齐夏秋素菜"
+      },
+      {
+        "name": "香菇油菜",
+        "season": ["spring", "autumn", "winter"],
+        "tags": ["家常", "素菜"],
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": ["family"],
+        "timeCost": "quick_15",
+        "proteinType": ["soy_mushroom"],
+        "notes": "提升菌菇类占比"
+      },
+      {
+        "name": "白灼生菜",
+        "season": ["spring", "summer"],
+        "tags": ["清爽", "低脂"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["vegetable"],
+        "notes": "补充低脂快手素菜"
+      },
+      {
+        "name": "干煸四季豆",
+        "season": ["summer", "autumn"],
+        "tags": ["下饭", "家常"],
+        "method": "stir_fry",
+        "flavor": "savory",
+        "scene": ["family"],
+        "timeCost": "normal_30",
+        "proteinType": ["vegetable"],
+        "notes": "增加下饭型素菜"
+      }
+    ],
+    "dinner_soup": [
+      {
+        "name": "番茄豆腐菌菇汤",
+        "season": ["spring", "summer", "autumn", "winter"],
+        "tags": ["家常", "清淡"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["soy_mushroom"],
+        "notes": "快手低脂汤"
+      },
+      {
+        "name": "冬瓜虾仁汤",
+        "season": ["summer"],
+        "tags": ["清爽", "低脂"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["seafood"],
+        "notes": "强化夏季汤品"
+      },
+      {
+        "name": "山药排骨汤",
+        "season": ["autumn", "winter"],
+        "tags": ["炖汤", "滋补"],
+        "method": "boil",
+        "flavor": "savory",
+        "scene": ["family"],
+        "timeCost": "slow_30_plus",
+        "proteinType": ["pork"],
+        "notes": "秋冬高频汤品"
+      },
+      {
+        "name": "紫菜豆腐汤",
+        "season": ["spring", "summer", "autumn", "winter"],
+        "tags": ["快手", "清淡"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["soy_mushroom"],
+        "notes": "基础型快手晚汤"
+      },
+      {
+        "name": "金针菇鸡蛋汤",
+        "season": ["spring", "summer", "autumn", "winter"],
+        "tags": ["蛋花", "鲜味"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["egg_dairy", "soy_mushroom"],
+        "notes": "蛋奶与菌菇组合"
+      },
+      {
+        "name": "白萝卜牛肉汤",
+        "season": ["autumn", "winter"],
+        "tags": ["暖胃", "炖汤"],
+        "method": "boil",
+        "flavor": "savory",
+        "scene": ["family"],
+        "timeCost": "slow_30_plus",
+        "proteinType": ["beef_lamb"],
+        "notes": "冬季高蛋白暖汤"
+      },
+      {
+        "name": "丝瓜蛤蜊汤",
+        "season": ["summer"],
+        "tags": ["清鲜", "海鲜"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["seafood"],
+        "notes": "补充夏季海鲜汤"
+      },
+      {
+        "name": "莲藕花生汤",
+        "season": ["autumn", "winter"],
+        "tags": ["养生", "家常"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["family"],
+        "timeCost": "slow_30_plus",
+        "proteinType": ["vegetable"],
+        "notes": "秋冬养生类汤"
+      },
+      {
+        "name": "娃娃菜豆腐汤",
+        "season": ["spring", "winter"],
+        "tags": ["清淡", "家常"],
+        "method": "boil",
+        "flavor": "light",
+        "scene": ["quick"],
+        "timeCost": "quick_15",
+        "proteinType": ["soy_mushroom"],
+        "notes": "基础蔬菜汤补位"
+      },
+      {
+        "name": "南瓜奶油浓汤",
+        "season": ["autumn", "winter"],
+        "tags": ["浓汤", "奶香"],
+        "method": "boil",
+        "flavor": "milky",
+        "scene": ["family"],
+        "timeCost": "normal_30",
+        "proteinType": ["egg_dairy", "vegetable"],
+        "notes": "增加西式口味变化"
+      }
+    ]
+  }
+}
