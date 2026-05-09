@@ -469,6 +469,10 @@ onMounted(fetchRecipes)
   border-radius: 0;
 }
 
+.recipe-image-container :deep(.recipe-image-el) {
+  object-position: center 32%;
+}
+
 .recipe-card-header {
   display: flex;
   justify-content: space-between;
