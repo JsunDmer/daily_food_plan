@@ -19,7 +19,7 @@
   - 下厨房检索命中后自动标准化为 800x800 URL 参数
 - 新增脚本：`scripts/download-recipe-images.cjs`
   - 支持 `--ids` / `--limit` / `--all` / `--force`
-  - 下载到 `public/images/recipes/{id}.jpg`
+  - 下载到 `src/client/public/images/recipes/{id}.jpg`
   - 输出失败清单 `image-download-failures.json`
 - 新增组件：`src/client/components/RecipeImage.vue`
   - 懒加载、骨架屏、错误回退、暖色覆盖层
@@ -27,7 +27,7 @@
   - `src/client/views/RecipesView.vue`
   - `src/client/components/DishCard.vue`
   - 图片来源策略：`recipe.image` -> `/images/recipes/{id}.jpg`；若本地图片缺失或加载失败，由 `RecipeImage` 自动回退占位图
-- 新增资源：`public/images/recipes/placeholder.svg`
+- 新增资源：`src/client/public/images/recipes/placeholder.svg`
 - 新增脚本命令：
   - `npm run images:search`
   - `npm run images:download`

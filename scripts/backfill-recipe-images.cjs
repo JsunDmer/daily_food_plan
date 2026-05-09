@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * 按 public/images/recipes/*.jpg 批量回填 recipes.json 的 image 字段。
+ * 按 src/client/public/images/recipes/*.jpg 批量回填 recipes.json 的 image 字段。
  *
  * 用法：
  *   node scripts/backfill-recipe-images.cjs
@@ -10,7 +10,7 @@ const fs = require('node:fs')
 const path = require('node:path')
 
 const RECIPES_FILE = path.join(__dirname, '../src/client/data/recipes.json')
-const IMAGES_DIR = path.join(__dirname, '../public/images/recipes')
+const IMAGES_DIR = path.join(__dirname, '../src/client/public/images/recipes')
 
 function run() {
   if (!fs.existsSync(RECIPES_FILE)) {

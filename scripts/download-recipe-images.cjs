@@ -15,7 +15,7 @@ const https = require('node:https')
 
 const SEARCH_RESULTS_FILE = path.join(__dirname, 'image-search-results.json')
 const DOWNLOAD_FAILURES_FILE = path.join(__dirname, 'image-download-failures.json')
-const OUTPUT_DIR = path.join(__dirname, '../public/images/recipes')
+const OUTPUT_DIR = path.join(__dirname, '../src/client/public/images/recipes')
 const DEFAULT_DELAY_MS = 800
 
 function loadJson(filePath, fallbackValue) {
