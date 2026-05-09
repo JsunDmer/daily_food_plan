@@ -113,6 +113,25 @@ function normalizeUrl(url) {
   return next
 }
 
+function isValidRecipeImageUrl(url) {
+  try {
+    const parsed = new URL(url)
+    const host = parsed.hostname.toLowerCase()
+    const filePath = parsed.pathname.toLowerCase()
+
+    const isRecipeHost =
+      /^i\d*\.chuimg\.com$/i.test(host) || /cdn\.xiachufang\.com/i.test(host)
+
+    if (!isRecipeHost) return false
+    if (!/\.(jpg|jpeg|png)$/i.test(filePath)) return false
+    if (/\/pic\/2013\/ie-story\.(png|jpg|jpeg)$/i.test(filePath)) return false
+    if (/favicon/i.test(filePath)) return false
+    return true
+  } catch {
+    return false
+  }
+}
+
 function extractImageCandidates(html) {
   const candidates = []
   const imgRegex = /<img[^>]+(?:data-src|src)=["']([^"']+)["'][^>]*>/gim
@@ -121,12 +140,85 @@ function extractImageCandidates(html) {
   while ((match = imgRegex.exec(html)) !== null) {
     const normalized = normalizeUrl(match[1])
     if (!normalized) continue
-    if (!/(chuimg\.com|cdn\.xiachufang\.com)/i.test(normalized)) continue
-    if (!/\.(jpg|jpeg|png)(\?|$)/i.test(normalized)) continue
-    candidates.push(normalized.replace(/\?.*$/, ''))
+    const cleaned = normalized.replace(/\?.*$/, '')
+    if (!isValidRecipeImageUrl(cleaned)) continue
+    candidates.push(cleaned)
   }
 
   return Array.from(new Set(candidates))
+}
+
+function extractRecipeEntries(html) {
+  const entries = []
+  const anchorRegex = /<a[^>]+href=["'](\/recipe\/\d+\/?)["'][^>]*>([\s\S]*?)<\/a>/gim
+  let match
+
+  while ((match = anchorRegex.exec(html)) !== null) {
+    const href = match[1]
+    const block = match[2]
+
+    const imgMatch = /<img[^>]+(?:data-src|src)=["']([^"']+)["'][^>]*>/i.exec(block)
+    if (!imgMatch?.[1]) continue
+
+    const normalized = normalizeUrl(imgMatch[1])
+    if (!normalized) continue
+    const cleaned = normalized.replace(/\?.*$/, '')
+    if (!isValidRecipeImageUrl(cleaned)) continue
+
+    const altMatch = /alt=["']([^"']*)["']/i.exec(imgMatch[0])
+    const title = decodeHtmlEntities((altMatch?.[1] || '').trim())
+
+    entries.push({
+      recipeUrl: `https://www.xiachufang.com${href}`,
+      title,
+      imageUrl: cleaned
+    })
+  }
+
+  return entries
+}
+
+function normalizeText(text) {
+  return String(text || '')
+    .toLowerCase()
+    .replace(/[^0-9a-z\u4e00-\u9fa5]/g, '')
+}
+
+function textOverlapRatio(source, target) {
+  const targetChars = Array.from(new Set(normalizeText(target).split('')))
+  if (!targetChars.length) return 0
+  let hit = 0
+  for (const ch of targetChars) {
+    if (source.includes(ch)) hit += 1
+  }
+  return hit / targetChars.length
+}
+
+function pickBestRecipeEntry(entries, recipeName, keyword) {
+  if (!entries.length) return null
+
+  const recipeNameNorm = normalizeText(recipeName)
+  const keywordNorm = normalizeText(keyword)
+  let best = entries[0]
+  let bestScore = -1
+
+  for (const entry of entries) {
+    const titleNorm = normalizeText(entry.title)
+    let score = 0
+
+    if (recipeNameNorm && titleNorm.includes(recipeNameNorm)) score += 12
+    if (keywordNorm && titleNorm.includes(keywordNorm)) score += 8
+    score += textOverlapRatio(titleNorm, recipeName) * 6
+
+    if (/^https:\/\/i\d*\.chuimg\.com\//i.test(entry.imageUrl)) score += 1
+
+    if (score > bestScore) {
+      bestScore = score
+      best = entry
+    }
+  }
+
+  return best
 }
 
 function extractRecipeUrl(html) {
@@ -230,8 +322,12 @@ function pickRecipes(allRecipes, options) {
 async function searchOneRecipe(recipe, keyword) {
   const searchUrl = `${SEARCH_BASE_URL}${encodeURIComponent(keyword)}`
   const html = await requestText(searchUrl)
-  const imageCandidates = extractImageCandidates(html)
-  const rawImageUrl = imageCandidates[0] || null
+  const recipeEntries = extractRecipeEntries(html)
+  const bestEntry = pickBestRecipeEntry(recipeEntries, recipe.name, keyword)
+  const imageCandidates = recipeEntries.length
+    ? recipeEntries.map((item) => item.imageUrl)
+    : extractImageCandidates(html)
+  const rawImageUrl = bestEntry?.imageUrl || imageCandidates[0] || null
   const imageUrl = optimizeImageUrl(rawImageUrl)
 
   return {
@@ -239,7 +335,8 @@ async function searchOneRecipe(recipe, keyword) {
     name: recipe.name,
     keyword,
     searchUrl,
-    recipeUrl: extractRecipeUrl(html),
+    recipeUrl: bestEntry?.recipeUrl || extractRecipeUrl(html),
+    imageTitle: bestEntry?.title || '',
     imageUrl,
     imageCandidates: imageCandidates.slice(0, 5),
     matched: Boolean(imageUrl)
