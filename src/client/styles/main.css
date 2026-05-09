@@ -336,16 +336,7 @@ input, select, textarea {
   animation: pulse 1.5s ease infinite;
 }
 
-/* Recipe Image Container - 1:1 aspect ratio */
-.recipe-image-container {
-  aspect-ratio: 1 / 1;
-  width: 100%;
-  overflow: hidden;
-  border-radius: var(--radius);
-  background: var(--bg-secondary);
-  position: relative;
-}
-
+/* Recipe Image - General styles */
 .recipe-image {
   width: 100%;
   height: 100%;

@@ -463,6 +463,8 @@ onMounted(fetchRecipes)
   margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg)) var(--space-md);
   overflow: hidden;
   border-radius: var(--radius) var(--radius) 0 0;
+  aspect-ratio: auto;
+  background: transparent;
 }
 
 .recipe-image-container :deep(.recipe-image-shell) {
