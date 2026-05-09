@@ -467,7 +467,6 @@ onMounted(fetchRecipes)
 
 .recipe-image-container :deep(.recipe-image-shell) {
   border-radius: 0;
-  max-height: clamp(150px, 34vw, 210px);
 }
 
 .recipe-card-header {

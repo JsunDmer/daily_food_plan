@@ -78,6 +78,7 @@ onMounted(() => {
   width: 100%;
   overflow: hidden;
   border-radius: inherit;
+  line-height: 0;
   background: linear-gradient(135deg, #fff1e7 0%, #ffe8d6 60%, #ffe0c7 100%);
 }
 
@@ -90,7 +91,8 @@ onMounted(() => {
 }
 
 .recipe-image-el {
-  position: relative;
+  position: absolute;
+  inset: 0;
   z-index: 1;
   display: block;
   width: 100%;
