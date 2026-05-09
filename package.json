@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "recipes:audit": "node scripts/recipe-audit.js"
+    "recipes:audit": "node scripts/recipe-audit.js",
+    "images:search": "node scripts/search-recipe-images.cjs --all",
+    "images:download": "node scripts/download-recipe-images.cjs --all",
+    "images:backfill": "node scripts/backfill-recipe-images.cjs"
   },
   "dependencies": {
     "vue": "^3.5.0",

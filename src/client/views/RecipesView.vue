@@ -54,14 +54,8 @@
     <div v-if="loading" class="loading">加载中...</div>
     <div v-else class="recipe-grid">
       <div v-for="recipe in filteredRecipes" :key="recipe.id" class="recipe-card" :class="{ disliked: recipe.isDisliked }">
-        <div v-if="recipe.image" class="recipe-image-container">
-          <img
-            :src="recipe.image"
-            :alt="recipe.name"
-            loading="lazy"
-            class="recipe-image"
-            @error="$event.target.style.display='none'"
-          />
+        <div class="recipe-image-container">
+          <RecipeImage :src="getRecipeImage(recipe)" :alt="recipe.name" />
         </div>
         <div class="recipe-card-header">
           <h4 class="recipe-name">{{ recipe.name }}</h4>
@@ -147,6 +141,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { getRecipes, addRecipe, favoriteRecipe, dislikeRecipe, unfavoriteRecipe, undislikeRecipe } from '../services/index.js'
+import RecipeImage from '../components/RecipeImage.vue'
 
 const categories = ref({
   breakfast_staple: '早餐-主食',
@@ -228,6 +223,12 @@ function getRecipeOrderScore(recipe) {
   // 自定义菜谱通常使用时间戳后缀，给它更高基准分，默认靠前展示。
   if (recipe.isCustom) return 1000000 + idNumber
   return idNumber
+}
+
+function getRecipeImage(recipe) {
+  if (recipe.image) return recipe.image
+  if (!recipe.id) return '/images/recipes/placeholder.svg'
+  return `/images/recipes/${recipe.id}.jpg`
 }
 
 function clearFilters() {
@@ -456,6 +457,16 @@ onMounted(fetchRecipes)
 
 .recipe-card.disliked {
   opacity: 0.5;
+}
+
+.recipe-image-container {
+  margin: calc(-1 * var(--space-lg)) calc(-1 * var(--space-lg)) var(--space-md);
+  overflow: hidden;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.recipe-image-container :deep(.recipe-image-shell) {
+  border-radius: 0;
 }
 
 .recipe-card-header {

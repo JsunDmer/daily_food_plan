@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="�1`M�">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6"/>
+      <stop offset="55%" stop-color="#ffd8b5"/>
+      <stop offset="100%" stop-color="#ffc48c"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#g1)"/>
+  <circle cx="200" cy="170" r="56" fill="#ffffff" fill-opacity="0.82"/>
+  <path d="M170 175c0-17 13-30 30-30s30 13 30 30c0 11-6 20-14 25l8 19h-10l-7-15a31 31 0 0 1-7 1 31 31 0 0 1-7-1l-7 15h-10l8-19c-8-5-14-14-14-25z" fill="#e85d04"/>
+  <rect x="112" y="256" width="176" height="34" rx="17" fill="#ffffff" fill-opacity="0.86"/>
+  <text x="200" y="278" text-anchor="middle" font-size="20" font-family="system-ui, -apple-system, Segoe UI, Arial, sans-serif" fill="#b54a00">����</text>
+</svg>

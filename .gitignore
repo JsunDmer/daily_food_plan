@@ -6,3 +6,8 @@ dist/
 
 # Android 原生项目由 CI 自动生成（仅根目录）
 /android/
+
+# 图片检索/下载脚本输出
+scripts/image-search-results.json
+scripts/image-search-failures.json
+scripts/image-download-failures.json

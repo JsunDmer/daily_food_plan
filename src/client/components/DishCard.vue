@@ -1,7 +1,7 @@
 <template>
   <div class="dish-card">
-    <div v-if="dish.image" class="dish-card-image">
-      <img :src="dish.image" :alt="dish.name" class="recipe-image" />
+    <div class="dish-card-image">
+      <RecipeImage :src="getDishImage(dish)" :alt="dish.name" />
     </div>
     <div class="dish-card-content">
       <div class="dish-name">{{ dish.name }}</div>
@@ -13,10 +13,17 @@
 
 <script setup>
 import IngredientList from './IngredientList.vue'
+import RecipeImage from './RecipeImage.vue'
 
 defineProps({
   dish: { type: Object, required: true }
 })
+
+function getDishImage(dish) {
+  if (dish.image) return dish.image
+  if (!dish.id) return '/images/recipes/placeholder.svg'
+  return `/images/recipes/${dish.id}.jpg`
+}
 </script>
 
 <style scoped>
@@ -40,18 +47,11 @@ defineProps({
 }
 
 .dish-card-image {
-  width: 80px;
-  height: 80px;
-  min-width: 80px;
+  width: 88px;
+  min-width: 88px;
   border-radius: var(--radius-sm);
   overflow: hidden;
   background: var(--bg-secondary);
-}
-
-.dish-card-image .recipe-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .dish-name {
@@ -70,15 +70,13 @@ defineProps({
 
 @media (max-width: 767px) {
   .dish-card {
-    flex-direction: column;
     padding: var(--space-sm) var(--space-md);
+    gap: var(--space-sm);
   }
 
   .dish-card-image {
-    width: 100%;
-    height: auto;
-    min-width: unset;
-    aspect-ratio: 16 / 9;
+    width: 74px;
+    min-width: 74px;
   }
 
   .dish-name {
