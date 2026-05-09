@@ -55,7 +55,7 @@
     <div v-else class="recipe-grid">
       <div v-for="recipe in filteredRecipes" :key="recipe.id" class="recipe-card" :class="{ disliked: recipe.isDisliked }">
         <div class="recipe-image-container">
-          <RecipeImage :src="getRecipeImage(recipe)" :alt="recipe.name" />
+          <RecipeImage :src="getRecipeImage(recipe)" :alt="recipe.name" aspect-ratio="16 / 9" />
         </div>
         <div class="recipe-card-header">
           <h4 class="recipe-name">{{ recipe.name }}</h4>
@@ -467,6 +467,7 @@ onMounted(fetchRecipes)
 
 .recipe-image-container :deep(.recipe-image-shell) {
   border-radius: 0;
+  max-height: clamp(150px, 34vw, 210px);
 }
 
 .recipe-card-header {
